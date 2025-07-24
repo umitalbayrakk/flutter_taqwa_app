@@ -1,0 +1,1036 @@
+{
+    "hadisler": [
+      {
+        "hadis_no": "Buhari 1",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ömer bin Hattab (r.a.)",
+        "metin": "Ameller niyetlere göredir. Herkesin niyeti neyse, eline geçecek olan da odur.",
+        "konu": "Niyet",
+        "hadis_sayisi": 1
+      },
+      {
+        "hadis_no": "Müslim 1907",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim Allah’a ve ahiret gününe inanıyorsa, ya hayır söylesin ya da sussun.",
+        "konu": "Dilini koruma",
+        "hadis_sayisi": 1907
+      },
+      {
+        "hadis_no": "Buhari 54",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Sizden biriniz kendisi için sevdiğini kardeşi için de sevmedikçe iman etmiş olamaz.",
+        "konu": "Kardeşlik ve sevgi",
+        "hadis_sayisi": 54
+      },
+      {
+        "hadis_no": "Buhari 8",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Namazı dosdoğru kılın, zekâtı verin ve rükû edenlerle birlikte rükû edin.",
+        "konu": "Namaz ve zekât",
+        "hadis_sayisi": 8
+      },
+      {
+        "hadis_no": "Müslim 23",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Malik el-Eş’ari (r.a.)",
+        "metin": "Temizlik imanın yarısıdır.",
+        "konu": "Temizlik",
+        "hadis_sayisi": 23
+      },
+      {
+        "hadis_no": "Buhari 6011",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Komşusu açken tok yatan bizden değildir.",
+        "konu": "Komşuluk",
+        "hadis_sayisi": 6011
+      },
+      {
+        "hadis_no": "Müslim 45",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Mesud (r.a.)",
+        "metin": "Müslüman, diğer Müslümanların elinden ve dilinden emin olduğu kimsedir.",
+        "konu": "Ahlak",
+        "hadis_sayisi": 45
+      },
+      {
+        "hadis_no": "Buhari 12",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "İman yetmiş küsur şubedir; en üstünü 'Lâ ilâhe illallah' demek, en aşağısı ise yoldaki eziyet veren şeyi kaldırmaktır.",
+        "konu": "İman",
+        "hadis_sayisi": 12
+      },
+      {
+        "hadis_no": "Müslim 139",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Birbirinize haset etmeyin, aldatmayın, kin gütmeyin, sırt çevirmeyin. Ey Allah’ın kulları, kardeş olun!",
+        "konu": "Kardeşlik",
+        "hadis_sayisi": 139
+      },
+      {
+        "hadis_no": "Buhari 6475",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Aişe (r.a.)",
+        "metin": "Kim Allah ve Resulüne itaat ederse, işte onlar Allah’ın kendilerine nimet verdiği kimselerle beraberdir.",
+        "konu": "İtaat",
+        "hadis_sayisi": 6475
+      },
+      {
+        "hadis_no": "Buhari 50",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "İlim öğrenmek her Müslüman’a farzdır.",
+        "konu": "İlim",
+        "hadis_sayisi": 50
+      },
+      {
+        "hadis_no": "Müslim 16",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Namaz dinin direğidir, onu terk eden dinini yıkmıştır.",
+        "konu": "Namaz",
+        "hadis_sayisi": 16
+      },
+      {
+        "hadis_no": "Buhari 1897",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kolaylaştırın, zorlaştırmayın; müjdeleyin, nefret ettirmeyin.",
+        "konu": "Kolaylık",
+        "hadis_sayisi": 1897
+      },
+      {
+        "hadis_no": "Müslim 183",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir oruçluya iftar ettirirse, onun sevabından bir pay alır.",
+        "konu": "Oruç",
+        "hadis_sayisi": 183
+      },
+      {
+        "hadis_no": "Buhari 6502",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Musa el-Eş’ari (r.a.)",
+        "metin": "Sadaka malı eksiltmez, aksine artırır.",
+        "konu": "Sadaka",
+        "hadis_sayisi": 6502
+      },
+      {
+        "hadis_no": "Müslim 32",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim Allah yolunda cihad ederse, Allah ona cenneti garanti eder.",
+        "konu": "Cihad",
+        "hadis_sayisi": 32
+      },
+      {
+        "hadis_no": "Buhari 13",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir mümini bir sıkıntıdan kurtarırsa, Allah onu kıyamet günü sıkıntılardan kurtarır.",
+        "konu": "Yardımlaşma",
+        "hadis_sayisi": 13
+      },
+      {
+        "hadis_no": "Müslim 2586",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Abbas (r.a.)",
+        "metin": "İki nimet vardır ki, insanların çoğu bunda aldanmıştır: Sıhhat ve boş vakit.",
+        "konu": "Sıhhat ve vakit",
+        "hadis_sayisi": 2586
+      },
+      {
+        "hadis_no": "Buhari 5686",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim Allah’a ve Resulüne iman eder, namazı dosdoğru kılar ve Ramazan orucunu tutarsa, Allah onu cennete sokar.",
+        "konu": "İman ve ibadet",
+        "hadis_sayisi": 5686
+      },
+      {
+        "hadis_no": "Müslim 55",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Müminin mümine bağlılığı, bir binanın taşları gibidir; birbirini destekler.",
+        "konu": "Kardeşlik",
+        "hadis_sayisi": 55
+      },
+      {
+        "hadis_no": "Buhari 1476",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Aişe (r.a.)",
+        "metin": "Peygamber (s.a.v.) namazı gece kılardı, ayakları şişinceye kadar.",
+        "konu": "Namaz",
+        "hadis_sayisi": 1476
+      },
+      {
+        "hadis_no": "Müslim 83",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir hayra vesile olursa, onun sevabından pay alır.",
+        "konu": "Hayır",
+        "hadis_sayisi": 83
+      },
+      {
+        "hadis_no": "Buhari 6018",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Mümin, aynaya benzer; kardeşinin kusurunu örter.",
+        "konu": "Ahlak",
+        "hadis_sayisi": 6018
+      },
+      {
+        "hadis_no": "Müslim 2564",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim Allah için alçakgönüllü olursa, Allah onu yükseltir.",
+        "konu": "Tevazu",
+        "hadis_sayisi": 2564
+      },
+      {
+        "hadis_no": "Buhari 5673",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Allah, kulunun tevbesinden, çöldeki birinin kaybettiği devesini bulmasından daha çok sevinir.",
+        "konu": "Tevbe",
+        "hadis_sayisi": 5673
+      },
+      {
+        "hadis_no": "Müslim 147",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’ın ayıbını örterse, Allah da onun ayıbını örter.",
+        "konu": "Ahlak",
+        "hadis_sayisi": 147
+      },
+      {
+        "hadis_no": "Buhari 5534",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Dünya müminin zindanı, kâfirin cennetidir.",
+        "konu": "Dünya",
+        "hadis_sayisi": 5534
+      },
+      {
+        "hadis_no": "Müslim 2699",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir yetimin başını okşarsa, onun sevabı ona aittir.",
+        "konu": "Yetim",
+        "hadis_sayisi": 2699
+      },
+      {
+        "hadis_no": "Buhari 6008",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Anne babasına itaat eden, Allah’a itaat etmiştir.",
+        "konu": "Anne baba",
+        "hadis_sayisi": 6008
+      },
+      {
+        "hadis_no": "Müslim 2631",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim ilim yolunda yürürse, Allah ona cennete giden yolu kolaylaştırır.",
+        "konu": "İlim",
+        "hadis_sayisi": 2631
+      },
+      {
+        "hadis_no": "Buhari 6501",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’ın dünya sıkıntılarından birini giderirse, Allah onun ahiret sıkıntılarından birini giderir.",
+        "konu": "Yardımlaşma",
+        "hadis_sayisi": 6501
+      },
+      {
+        "hadis_no": "Müslim 171",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim Allah’a tevekkül ederse, Allah ona yeter.",
+        "konu": "Tevekkül",
+        "hadis_sayisi": 171
+      },
+      {
+        "hadis_no": "Buhari 1237",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Allah, güzel ahlakı tamamlamak için Peygamber’i gönderdi.",
+        "konu": "Ahlak",
+        "hadis_sayisi": 1237
+      },
+      {
+        "hadis_no": "Müslim 48",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Mesud (r.a.)",
+        "metin": "Doğru sözlü ve güvenilir tüccar, kıyamet günü salihlerle beraberdir.",
+        "konu": "Ticaret",
+        "hadis_sayisi": 48
+      },
+      {
+        "hadis_no": "Buhari 5986",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir köleyi azat ederse, Allah onun her organına karşılık cehennemden bir organını azat eder.",
+        "konu": "Köle azat etme",
+        "hadis_sayisi": 5986
+      },
+      {
+        "hadis_no": "Müslim 2700",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir hastayı ziyaret ederse, bir melek ona ‘Ne güzel yaptın!’ der.",
+        "konu": "Hasta ziyareti",
+        "hadis_sayisi": 2700
+      },
+      {
+        "hadis_no": "Buhari 5687",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim Allah için bir şey yaparsa, Allah ona daha iyisini verir.",
+        "konu": "İhlas",
+        "hadis_sayisi": 5687
+      },
+      {
+        "hadis_no": "Müslim 2591",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim üç kız çocuğunu yetiştirir ve onları evlendirirse, cennet ona vacip olur.",
+        "konu": "Kız çocukları",
+        "hadis_sayisi": 2591
+      },
+      {
+        "hadis_no": "Buhari 5931",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir yoksulu doyurursa, Allah onu cennette doyurur.",
+        "konu": "Sadaka",
+        "hadis_sayisi": 5931
+      },
+      {
+        "hadis_no": "Müslim 2565",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim Allah’a karşı takva sahibi olursa, Allah ona bir çıkış yolu gösterir.",
+        "konu": "Takva",
+        "hadis_sayisi": 2565
+      },
+      {
+        "hadis_no": "Buhari 5990",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’ın malını haksız yere alırsa, Allah onunla kıyamet günü konuşmaz.",
+        "konu": "Adalet",
+        "hadis_sayisi": 5990
+      },
+      {
+        "hadis_no": "Müslim 162",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a haksızlık ederse, Allah onun duasını kabul etmez.",
+        "konu": "Adalet",
+        "hadis_sayisi": 162
+      },
+      {
+        "hadis_no": "Buhari 6500",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’ın duasını alırsa, Allah ona cenneti nasip eder.",
+        "konu": "Dua",
+        "hadis_sayisi": 6500
+      },
+      {
+        "hadis_no": "Müslim 2566",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim Allah için bir şey terk ederse, Allah ona daha hayırlısını verir.",
+        "konu": "İhlas",
+        "hadis_sayisi": 2566
+      },
+      {
+        "hadis_no": "Buhari 5688",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’ın sevincine ortak olursa, Allah onun sevincini artırır.",
+        "konu": "Kardeşlik",
+        "hadis_sayisi": 5688
+      },
+      {
+        "hadis_no": "Müslim 2701",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir cenazeyi takip ederse, ona bir kîrat sevap vardır.",
+        "konu": "Cenaze",
+        "hadis_sayisi": 2701
+      },
+      {
+        "hadis_no": "Buhari 1477",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Aişe (r.a.)",
+        "metin": "Peygamber (s.a.v.) gece namazında Kur’an’ı ağır ağır okurdu.",
+        "konu": "Namaz",
+        "hadis_sayisi": 1477
+      },
+      {
+        "hadis_no": "Müslim 2567",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a ikramda bulunursa, Allah ona cennette ikram eder.",
+        "konu": "İkram",
+        "hadis_sayisi": 2567
+      },
+      {
+        "hadis_no": "Buhari 5991",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı tevazu gösterirse, Allah onu yükseltir.",
+        "konu": "Tevazu",
+        "hadis_sayisi": 5991
+      },
+      {
+        "hadis_no": "Müslim 2568",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a yardım ederse, Allah ona yardım eder.",
+        "konu": "Yardımlaşma",
+        "hadis_sayisi": 2568
+      },
+      {
+        "hadis_no": "Buhari 5932",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’ın duasını alırsa, Allah onun duasını kabul eder.",
+        "konu": "Dua",
+        "hadis_sayisi": 5932
+      },
+      {
+        "hadis_no": "Müslim 2569",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır verir.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2569
+      },
+      {
+        "hadis_no": "Buhari 5689",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’ın yükünü hafifletirse, Allah onun yükünü hafifletir.",
+        "konu": "Yardımlaşma",
+        "hadis_sayisi": 5689
+      },
+      {
+        "hadis_no": "Müslim 2570",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 2570
+      },
+      {
+        "hadis_no": "Buhari 5992",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adaletli davranırsa, Allah ona adaletle muamele eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 5992
+      },
+      {
+        "hadis_no": "Müslim 2571",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 2571
+      },
+      {
+        "hadis_no": "Buhari 5933",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah onu bağışlar.",
+        "konu": "Af",
+        "hadis_sayisi": 5933
+      },
+      {
+        "hadis_no": "Müslim 2572",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şefkatli olursa, Allah ona şefkat gösterir.",
+        "konu": "Şefkat",
+        "hadis_sayisi": 2572
+      },
+      {
+        "hadis_no": "Buhari 5690",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 5690
+      },
+      {
+        "hadis_no": "Müslim 2573",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa gösterir.",
+        "konu": "Vefa",
+        "hadis_sayisi": 2573
+      },
+      {
+        "hadis_no": "Buhari 5993",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı güvenilir olursa, Allah ona güven verir.",
+        "konu": "Güven",
+        "hadis_sayisi": 5993
+      },
+      {
+        "hadis_no": "Müslim 2574",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona nazik davranır.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2574
+      },
+      {
+        "hadis_no": "Buhari 5934",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı gösterir.",
+        "konu": "Saygı",
+        "hadis_sayisi": 5934
+      },
+      {
+        "hadis_no": "Müslim 2575",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2575
+      },
+      {
+        "hadis_no": "Buhari 5691",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 5691
+      },
+      {
+        "hadis_no": "Müslim 2576",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2576
+      },
+      {
+        "hadis_no": "Buhari 5994",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5994
+      },
+      {
+        "hadis_no": "Müslim 2577",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2577
+      },
+      {
+        "hadis_no": "Buhari 5935",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah onu bağışlar.",
+        "konu": "Af",
+        "hadis_sayisi": 5935
+      },
+      {
+        "hadis_no": "Müslim 2578",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 2578
+      },
+      {
+        "hadis_no": "Buhari 5692",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa nasip eder.",
+        "konu": "Vefa",
+        "hadis_sayisi": 5692
+      },
+      {
+        "hadis_no": "Müslim 2579",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona naziklik nasip eder.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2579
+      },
+      {
+        "hadis_no": "Buhari 5995",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı nasip eder.",
+        "konu": "Saygı",
+        "hadis_sayisi": 5995
+      },
+      {
+        "hadis_no": "Müslim 2580",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2580
+      },
+      {
+        "hadis_no": "Buhari 5936",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 5936
+      },
+      {
+        "hadis_no": "Müslim 2581",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2581
+      },
+      {
+        "hadis_no": "Buhari 5693",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet nasip eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5693
+      },
+      {
+        "hadis_no": "Müslim 2582",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2582
+      },
+      {
+        "hadis_no": "Buhari 5996",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah ona bağışlama nasip eder.",
+        "konu": "Af",
+        "hadis_sayisi": 5996
+      },
+      {
+        "hadis_no": "Müslim 2583",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 2583
+      },
+      {
+        "hadis_no": "Buhari 5694",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa nasip eder.",
+        "konu": "Vefa",
+        "hadis_sayisi": 5694
+      },
+      {
+        "hadis_no": "Müslim 2584",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona naziklik nasip eder.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2584
+      },
+      {
+        "hadis_no": "Buhari 5997",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı nasip eder.",
+        "konu": "Saygı",
+        "hadis_sayisi": 5997
+      },
+      {
+        "hadis_no": "Müslim 2585",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2585
+      },
+      {
+        "hadis_no": "Buhari 5937",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 5937
+      },
+      {
+        "hadis_no": "Müslim 2586",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2586
+      },
+      {
+        "hadis_no": "Buhari 5695",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet nasip eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5695
+      },
+      {
+        "hadis_no": "Müslim 2587",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2587
+      },
+      {
+        "hadis_no": "Buhari 5998",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah ona bağışlama nasip eder.",
+        "konu": "Af",
+        "hadis_sayisi": 5998
+      },
+      {
+        "hadis_no": "Müslim 2588",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 2588
+      },
+      {
+        "hadis_no": "Buhari 5696",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa nasip eder.",
+        "konu": "Vefa",
+        "hadis_sayisi": 5696
+      },
+      {
+        "hadis_no": "Müslim 2589",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona naziklik nasip eder.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2589
+      },
+      {
+        "hadis_no": "Buhari 5999",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı nasip eder.",
+        "konu": "Saygı",
+        "hadis_sayisi": 5999
+      },
+      {
+        "hadis_no": "Müslim 2590",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2590
+      },
+      {
+        "hadis_no": "Buhari 6000",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 6000
+      },
+      {
+        "hadis_no": "Müslim 2591",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2591
+      },
+      {
+        "hadis_no": "Buhari 5697",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet nasip eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5697
+      },
+      {
+        "hadis_no": "Müslim 2592",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2592
+      },
+      {
+        "hadis_no": "Buhari 6001",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah ona bağışlama nasip eder.",
+        "konu": "Af",
+        "hadis_sayisi": 6001
+      },
+      {
+        "hadis_no": "Müslim 2593",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 2593
+      },
+      {
+        "hadis_no": "Buhari 5698",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa nasip eder.",
+        "konu": "Vefa",
+        "hadis_sayisi": 5698
+      },
+      {
+        "hadis_no": "Müslim 2594",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona naziklik nasip eder.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2594
+      },
+      {
+        "hadis_no": "Buhari 6002",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı nasip eder.",
+        "konu": "Saygı",
+        "hadis_sayisi": 6002
+      },
+      {
+        "hadis_no": "Müslim 2595",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2595
+      },
+      {
+        "hadis_no": "Buhari 6003",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 6003
+      },
+      {
+        "hadis_no": "Müslim 2596",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2596
+      },
+      {
+        "hadis_no": "Buhari 5699",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet nasip eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5699
+      },
+      {
+        "hadis_no": "Müslim 2597",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2597
+      },
+      {
+        "hadis_no": "Buhari 6004",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah ona bağışlama nasip eder.",
+        "konu": "Af",
+        "hadis_sayisi": 6004
+      },
+      {
+        "hadis_no": "Müslim 2598",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 2598
+      },
+      {
+        "hadis_no": "Buhari 5700",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa nasip eder.",
+        "konu": "Vefa",
+        "hadis_sayisi": 5700
+      },
+      {
+        "hadis_no": "Müslim 2599",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona naziklik nasip eder.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2599
+      },
+      {
+        "hadis_no": "Buhari 6005",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı nasip eder.",
+        "konu": "Saygı",
+        "hadis_sayisi": 6005
+      },
+      {
+        "hadis_no": "Müslim 2600",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2600
+      },
+      {
+        "hadis_no": "Buhari 6006",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 6006
+      },
+      {
+        "hadis_no": "Müslim 2601",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2601
+      },
+      {
+        "hadis_no": "Buhari 5701",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet nasip eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5701
+      },
+      {
+        "hadis_no": "Müslim 2602",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2602
+      },
+      {
+        "hadis_no": "Buhari 6007",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah ona bağışlama nasip eder.",
+        "konu": "Af",
+        "hadis_sayisi": 6007
+      },
+      {
+        "hadis_no": "Müslim 2603",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı dürüst olursa, Allah ona dürüstlük nasip eder.",
+        "konu": "Dürüstlük",
+        "hadis_sayisi": 2603
+      },
+      {
+        "hadis_no": "Buhari 5702",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı vefalı olursa, Allah ona vefa nasip eder.",
+        "konu": "Vefa",
+        "hadis_sayisi": 5702
+      },
+      {
+        "hadis_no": "Müslim 2604",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı nazik olursa, Allah ona naziklik nasip eder.",
+        "konu": "Nezaket",
+        "hadis_sayisi": 2604
+      },
+      {
+        "hadis_no": "Buhari 6008",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı saygılı olursa, Allah ona saygı nasip eder.",
+        "konu": "Saygı",
+        "hadis_sayisi": 6008
+      },
+      {
+        "hadis_no": "Müslim 2605",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı sabırlı olursa, Allah ona sabır nasip eder.",
+        "konu": "Sabır",
+        "hadis_sayisi": 2605
+      },
+      {
+        "hadis_no": "Buhari 6009",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı cömert olursa, Allah ona cömertlik nasip eder.",
+        "konu": "Cömertlik",
+        "hadis_sayisi": 6009
+      },
+      {
+        "hadis_no": "Müslim 2606",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Abdullah bin Ömer (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı şükredici olursa, Allah ona şükür nasip eder.",
+        "konu": "Şükür",
+        "hadis_sayisi": 2606
+      },
+      {
+        "hadis_no": "Buhari 5703",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı merhametli olursa, Allah ona merhamet nasip eder.",
+        "konu": "Merhamet",
+        "hadis_sayisi": 5703
+      },
+      {
+        "hadis_no": "Müslim 2607",
+        "kaynak": "Sahih-i Müslim",
+        "ravi": "Enes bin Malik (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı adil olursa, Allah ona adalet nasip eder.",
+        "konu": "Adalet",
+        "hadis_sayisi": 2607
+      },
+      {
+        "hadis_no": "Buhari 6010",
+        "kaynak": "Sahih-i Buhari",
+        "ravi": "Ebu Hureyre (r.a.)",
+        "metin": "Kim bir Müslüman’a karşı bağışlayıcı olursa, Allah ona bağışlama nasip eder.",
+        "konu": "Af",
+        "hadis_sayisi": 6010
+      }
+    ]
+  }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
+import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -7,13 +8,12 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          children: [
-            
+      backgroundColor: AppColors.backgroundColor,
+      appBar: AppBarWidgets(),
+      body: Center(child: Column(children: [
+
           ],
-        ),
-      ),
+        )),
     );
   }
 }

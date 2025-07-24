@@ -1,0 +1,697 @@
+{
+	"esmaulhusnadata": [
+		{
+			"ID": "3",
+			"OKUNUSU": "ALLAH c.c.",
+			"ANLAMI": "Tüm isim ve sıfatları kendinde toplayan.",
+			"ARAPCA": "الله جَلَّ جَـلآلهُ",
+			"RESIM": null
+		},
+		{
+			"ID": "4",
+			"OKUNUSU": "Er-Rahmân",
+			"ANLAMI": "Rahmetiyle muamele eden, esirgeyen.",
+			"ARAPCA": "اَلرَّحْمَنُ",
+			"RESIM": null
+		},
+		{
+			"ID": "5",
+			"OKUNUSU": "Er-Rahim",
+			"ANLAMI": "Merhamet eden, bağışlayan.",
+			"ARAPCA": "اَلرَّحِيـمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "6",
+			"OKUNUSU": "El-Melik",
+			"ANLAMI": "Mülkün gerçek sahibi, mülk ve saltanatı devamlı olan.",
+			"ARAPCA": "اَلـْـمَلِـكُ",
+			"RESIM": null
+		},
+		{
+			"ID": "7",
+			"OKUNUSU": "El-Kuddûs",
+			"ANLAMI": "Her türlü eksiklik ve ayıplardan münezzeh olan.",
+			"ARAPCA": "اَلـْـقـُدُّوسُ",
+			"RESIM": null
+		},
+		{
+			"ID": "8",
+			"OKUNUSU": "Es-Selâm",
+			"ANLAMI": "Kullarını selâmete çıkaran.",
+			"ARAPCA": "اَلسَّــلاَمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "9",
+			"OKUNUSU": "El-Mü’min",
+			"ANLAMI": "Gönüllerde iman ışığı uyandıran.",
+			"ARAPCA": "اَلــْمُؤْمِنُ",
+			"RESIM": null
+		},
+		{
+			"ID": "10",
+			"OKUNUSU": "El-Müheymin",
+			"ANLAMI": "Gözeten ve koruyan.",
+			"ARAPCA": "اَلـْمُهَيْمِنُ",
+			"RESIM": null
+		},
+		{
+			"ID": "11",
+			"OKUNUSU": "El-Aziz",
+			"ANLAMI": "Mağlup edilmesi asla mümkün olmayan.",
+			"ARAPCA": "اَلـْعَـزِيـزُ",
+			"RESIM": null
+		},
+		{
+			"ID": "12",
+			"OKUNUSU": "El-Cebbâr",
+			"ANLAMI": "İstediğini mutlak yapan, dilediğine muktedir olan.",
+			"ARAPCA": "اَلــْجــَبَّارُ",
+			"RESIM": null
+		},
+		{
+			"ID": "13",
+			"OKUNUSU": "El-Mütekebbir",
+			"ANLAMI": "Her şeyde büyüklüğünü gösteren.",
+			"ARAPCA": "اَلـْمُتَكـَبِّر",
+			"RESIM": null
+		},
+		{
+			"ID": "14",
+			"OKUNUSU": "El-Hâlık",
+			"ANLAMI": "Her şeyi yoktan var eden.",
+			"ARAPCA": "اَلـْخَــالِقُ",
+			"RESIM": null
+		},
+		{
+			"ID": "15",
+			"OKUNUSU": "El-Bârî",
+			"ANLAMI": "Her şeyi uygun bir tarzda ve birbirine uygun yaratan.",
+			"ARAPCA": "اَلـْـبَارِئُ",
+			"RESIM": null
+		},
+		{
+			"ID": "16",
+			"OKUNUSU": "El-Musavvir",
+			"ANLAMI": "Her şeye bir şekil ve hususiyet verip tasvir eden.",
+			"ARAPCA": "اَلـْمُصَوِّرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "17",
+			"OKUNUSU": "El-Gaffâr",
+			"ANLAMI": "Kullarının günahlarını örten, günahlarını bağışlayan.",
+			"ARAPCA": "اَلــْغَـــفَّارُ",
+			"RESIM": null
+		},
+		{
+			"ID": "18",
+			"OKUNUSU": "El-Kahhâr",
+			"ANLAMI": "Her şeye, her istediğini yapacak surette galip ve hakim olan.",
+			"ARAPCA": "اَلـْـقَــهّـارُ",
+			"RESIM": null
+		},
+		{
+			"ID": "19",
+			"OKUNUSU": "El-Vehhâb",
+			"ANLAMI": "Çok fazla ihsan eden.",
+			"ARAPCA": "اَلـْـوَهَّابُ",
+			"RESIM": null
+		},
+		{
+			"ID": "20",
+			"OKUNUSU": "Er-Rezzâk",
+			"ANLAMI": "Bütün mahlukatın rızkını veren ve ihtiyacını karşılayan.",
+			"ARAPCA": "اَلـرَّزَّا قُ",
+			"RESIM": null
+		},
+		{
+			"ID": "21",
+			"OKUNUSU": "El-Fettâh",
+			"ANLAMI": "Her türlü zorlukları kolaylaştıran, darlıktan kurtaran.",
+			"ARAPCA": "اَلـْـفـَتَّاحُ",
+			"RESIM": null
+		},
+		{
+			"ID": "22",
+			"OKUNUSU": "El-Alîm",
+			"ANLAMI": "Her şeyi en ince noktasına kadar bilen, ilmi ebedi ve ezeli olan.",
+			"ARAPCA": "اَلـْـعَـلِيمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "23",
+			"OKUNUSU": "El-Kâbıd",
+			"ANLAMI": "Dilediğine darlık veren, sıkan, daraltan.",
+			"ARAPCA": "اَلـْـقَابضُ",
+			"RESIM": null
+		},
+		{
+			"ID": "24",
+			"OKUNUSU": "El-Bâsıt",
+			"ANLAMI": "Dilediğine bolluk veren, açan, genişleten.",
+			"ARAPCA": "اَلـْــبَاسِطُ",
+			"RESIM": null
+		},
+		{
+			"ID": "25",
+			"OKUNUSU": "El-Hâfıd",
+			"ANLAMI": "Yukarıdan aşağıya indiren, alçaltan.",
+			"ARAPCA": "اَلـْخَافِضُ",
+			"RESIM": null
+		},
+		{
+			"ID": "26",
+			"OKUNUSU": "Er-Râfî",
+			"ANLAMI": "Yukarı kaldıran, yükselten.",
+			"ARAPCA": "اَلرَّافِـــعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "27",
+			"OKUNUSU": "El-Muiz",
+			"ANLAMI": "İzzet verip ağırlayan.",
+			"ARAPCA": "الـْـمُعِــزُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "28",
+			"OKUNUSU": "El-Muzil",
+			"ANLAMI": "Zillete düşüren, hor ve hakir eden.",
+			"ARAPCA": "الـْـمُذ ِلُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "29",
+			"OKUNUSU": "Es-Semî",
+			"ANLAMI": "Her şeyi işiten.",
+			"ARAPCA": "اَلسَّمـِيعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "30",
+			"OKUNUSU": "El-Basîr",
+			"ANLAMI": "Her şeyi gören.",
+			"ARAPCA": "اَلـْـبَصِيرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "31",
+			"OKUNUSU": "El-Hakem",
+			"ANLAMI": "Hikmet sahibi olan, yaptığı her işte hikmeti gözeten.",
+			"ARAPCA": "اَلـْحَكـَمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "32",
+			"OKUNUSU": "El-Adl",
+			"ANLAMI": "Son derece adaletli olan.",
+			"ARAPCA": "َلـْعـَدْ لُ",
+			"RESIM": null
+		},
+		{
+			"ID": "33",
+			"OKUNUSU": "El-Latîf",
+			"ANLAMI": "İşlerin bütün inceliklerini bilen.",
+			"ARAPCA": "اللـطِيفُ",
+			"RESIM": null
+		},
+		{
+			"ID": "34",
+			"OKUNUSU": "El-Habîr",
+			"ANLAMI": "Her şeyin iç yüzünden, gizli tarafından haberdar olan.",
+			"ARAPCA": "اَلـْخَـبـِيرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "35",
+			"OKUNUSU": "El-Halîm",
+			"ANLAMI": "Yumuşak davranan, hilmi çok olan.",
+			"ARAPCA": "اَلـْحَلــِيمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "36",
+			"OKUNUSU": "El-Azîm\t",
+			"ANLAMI": "Pek azametli ve büyük olan.",
+			"ARAPCA": "اَلـْعَظـِيمُُ",
+			"RESIM": null
+		},
+		{
+			"ID": "37",
+			"OKUNUSU": "El-Gafûr",
+			"ANLAMI": "Çok bağışlayan, magfireti çok olan.",
+			"ARAPCA": "اَلـْغــَفُورُ",
+			"RESIM": null
+		},
+		{
+			"ID": "38",
+			"OKUNUSU": "Eş-Şekûr",
+			"ANLAMI": "Kendi rızası için yapılan iyi işleri, ziyadesiyle mükafatlandıran.",
+			"ARAPCA": "اَلشَّــكُورُ",
+			"RESIM": null
+		},
+		{
+			"ID": "39",
+			"OKUNUSU": "El-Aliyy\t",
+			"ANLAMI": "Çok yüce. Pek yüksek olan.",
+			"ARAPCA": "اَلـْــعَلِيُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "40",
+			"OKUNUSU": "El-Kebîr",
+			"ANLAMI": "Büyüklüğünde hudut olmayan.",
+			"ARAPCA": "اَلـْـكَبـِيرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "41",
+			"OKUNUSU": "El-Hafîz",
+			"ANLAMI": "Yapılan işleri bütün tafsilatıyla, ayrıntılarıyla tutan.",
+			"ARAPCA": "اَلـْـحَفِيظُ",
+			"RESIM": null
+		},
+		{
+			"ID": "42",
+			"OKUNUSU": "El-Mukît",
+			"ANLAMI": "Yaratılmış her şeyin azığını veren.",
+			"ARAPCA": "اَلـْـمُقِيتُ",
+			"RESIM": null
+		},
+		{
+			"ID": "43",
+			"OKUNUSU": "El-Hasîb",
+			"ANLAMI": "Herkesin hayatı boyunca yaptıklarının hesabını soran.",
+			"ARAPCA": "اَلـْحَسِيبُ",
+			"RESIM": null
+		},
+		{
+			"ID": "44",
+			"OKUNUSU": "El-Celîl",
+			"ANLAMI": "Azamet sahibi olan, ululuk sahibi olan.",
+			"ARAPCA": "اَلـْجَلِيــلُ",
+			"RESIM": null
+		},
+		{
+			"ID": "45",
+			"OKUNUSU": "El-Kerîm",
+			"ANLAMI": "Çok ikram edici. Keremi ve mağfireti bol olan.",
+			"ARAPCA": "اَلـْــكَرِيـمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "46",
+			"OKUNUSU": "Er-Rakîb",
+			"ANLAMI": "Bütün varlıklar üzerine gözcü olan.",
+			"ARAPCA": "اَلرّقِيبُ",
+			"RESIM": null
+		},
+		{
+			"ID": "47",
+			"OKUNUSU": "El-Mücîb",
+			"ANLAMI": "Dua edenlerin dualarını kabul eden, isteklerini veren.",
+			"ARAPCA": "اَلـْمُجِيبُ",
+			"RESIM": null
+		},
+		{
+			"ID": "48",
+			"OKUNUSU": "El-Vâsî",
+			"ANLAMI": "Lütfu bol olan.",
+			"ARAPCA": "اَلـْواسـعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "49",
+			"OKUNUSU": "El-Hakîm",
+			"ANLAMI": "Emirleri, kelamı ve bütün işleri hikmetli olan.",
+			"ARAPCA": "اَلـْحَـكِيمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "50",
+			"OKUNUSU": "El-Vedûd",
+			"ANLAMI": "İyi kullarını seven, sevilmeye ve dostluğa hakkıyla layık olan.",
+			"ARAPCA": "اَلـْوَدُودُ",
+			"RESIM": null
+		},
+		{
+			"ID": "51",
+			"OKUNUSU": "El-Mecîd",
+			"ANLAMI": "Şanı çok büyük ve çok yüksek olan.",
+			"ARAPCA": "اَلـْمَجِيدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "52",
+			"OKUNUSU": "El-Bâis",
+			"ANLAMI": "Ölüleri diriltip kabirlerinden çıkaran.",
+			"ARAPCA": "اَلـْبَاعِثُ",
+			"RESIM": null
+		},
+		{
+			"ID": "53",
+			"OKUNUSU": "Eş-Şehîd",
+			"ANLAMI": "Her zaman ve her yerde hazır ve nazır olan.",
+			"ARAPCA": "اَلشَّهِيد",
+			"RESIM": null
+		},
+		{
+			"ID": "54",
+			"OKUNUSU": "El-Hakk",
+			"ANLAMI": "Vacib'ul vücut olan, varlığı hiç değişmeden duran.",
+			"ARAPCA": "اَلـْحَـقُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "55",
+			"OKUNUSU": "El-Vekîl",
+			"ANLAMI": "İşlerini kendisine bırakanların işini düzelten ve her şeyin iyisini temin eden.",
+			"ARAPCA": "اَلـْوَكِيلُ",
+			"RESIM": null
+		},
+		{
+			"ID": "56",
+			"OKUNUSU": "El-Kaviyy",
+			"ANLAMI": "Pek kuvvetli. Pek güçlü olan.",
+			"ARAPCA": "اَلـْقَوِيُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "57",
+			"OKUNUSU": "El-Metîn",
+			"ANLAMI": "Çok sağlam olan.",
+			"ARAPCA": "اَلـْمَتِِينُ",
+			"RESIM": null
+		},
+		{
+			"ID": "58",
+			"OKUNUSU": "El-Veliyy",
+			"ANLAMI": "İyi kullarına, gerçek mü’minlere dost olan.",
+			"ARAPCA": "اَلـْـوَلِيُّّ",
+			"RESIM": null
+		},
+		{
+			"ID": "59",
+			"OKUNUSU": "El-Hamîd",
+			"ANLAMI": "Her türlü hamd ve övgüye layık olan.",
+			"ARAPCA": "اَلـْحَمِيدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "60",
+			"OKUNUSU": "El-Muhsî",
+			"ANLAMI": "İstisnasız her şeyin tek tek sayısını bilen.",
+			"ARAPCA": "الـْمُحْصِي",
+			"RESIM": null
+		},
+		{
+			"ID": "61",
+			"OKUNUSU": "El-Mübdi",
+			"ANLAMI": "Bütün mahlukatı maddesiz ve örneksiz olarak ilk baştan yaratan.",
+			"ARAPCA": "اَلـْمُبْدِئُ",
+			"RESIM": null
+		},
+		{
+			"ID": "62",
+			"OKUNUSU": "El-Muid",
+			"ANLAMI": "Yaradılmışları yok ettikten sonra tekrar yaratan.",
+			"ARAPCA": "اَلـْمُعـِيِدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "63",
+			"OKUNUSU": "El-Muhyî",
+			"ANLAMI": "İhya eden, dirilten, can bağışlayan, sağlık veren.",
+			"ARAPCA": "اَلـْمُحْيِ",
+			"RESIM": null
+		},
+		{
+			"ID": "64",
+			"OKUNUSU": "El-Mümît",
+			"ANLAMI": "Ölümü yaratan, öldüren.",
+			"ARAPCA": "اَلـْمُمِيتُ",
+			"RESIM": null
+		},
+		{
+			"ID": "65",
+			"OKUNUSU": "El-Hayy",
+			"ANLAMI": "Diri, tam ve mükemmel manasıyla hayat sahibi.",
+			"ARAPCA": "اَلـْحَــيُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "66",
+			"OKUNUSU": "El-Kayyûm",
+			"ANLAMI": "Gökleri, yeri ve her şeyi tutan.",
+			"ARAPCA": "اَلـْقَـيُّومُ",
+			"RESIM": null
+		},
+		{
+			"ID": "67",
+			"OKUNUSU": "El-Vâcid",
+			"ANLAMI": "İstediğini, istediği vakit bulan.",
+			"ARAPCA": "اَلـْوَاجِدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "68",
+			"OKUNUSU": "El-Mâcid",
+			"ANLAMI": "Kadri büyük, keremi bol olan.",
+			"ARAPCA": "اَلـْمَاجِدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "69",
+			"OKUNUSU": "El-Vâhid",
+			"ANLAMI": "Tek olan.",
+			"ARAPCA": "اَلـْواحِدُ الأحَدِ",
+			"RESIM": null
+		},
+		{
+			"ID": "70",
+			"OKUNUSU": "Es-Samed",
+			"ANLAMI": "Sığınacak tek dayanak olan.",
+			"ARAPCA": "اَلصَّـمَدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "71",
+			"OKUNUSU": "El-Kâdir",
+			"ANLAMI": "Her şeye gücü yeten, her istediğini yapmaya kâdir olan.",
+			"ARAPCA": "اَلـْــقَادِرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "72",
+			"OKUNUSU": "El-Muktedir",
+			"ANLAMI": "Kuvvet ve kudret sahipleri üzerinde dilediği gibi tasarruf eden.",
+			"ARAPCA": "اَلـْمُقتَدِرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "73",
+			"OKUNUSU": "El-Mukaddim",
+			"ANLAMI": "İstediğini ileri geçirip, öne alan.",
+			"ARAPCA": "اَلـْمُقَدِّمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "74",
+			"OKUNUSU": "El-Muahhir",
+			"ANLAMI": "İstediğini geri koyan, arkaya bırakan.",
+			"ARAPCA": "اَلـْمُؤَخِّرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "75",
+			"OKUNUSU": "El-Evvel",
+			"ANLAMI": "Başlangıcı olmayan, ilk olan.",
+			"ARAPCA": "الأوَّلُ",
+			"RESIM": null
+		},
+		{
+			"ID": "76",
+			"OKUNUSU": "El-Âhir",
+			"ANLAMI": "Bitişi olmayan, son olan.",
+			"ARAPCA": "الآخِرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "77",
+			"OKUNUSU": "Ez-Zâhir",
+			"ANLAMI": "Açıkca bilinen, âşikâr olan.",
+			"ARAPCA": "الظَّاهِرُ",
+			"RESIM": null
+		},
+		{
+			"ID": "78",
+			"OKUNUSU": "El-Bâtın",
+			"ANLAMI": "Gizli olan.",
+			"ARAPCA": "الـْبَاَطِنُ",
+			"RESIM": null
+		},
+		{
+			"ID": "79",
+			"OKUNUSU": "El-Vâlî",
+			"ANLAMI": "Her şeyi tek başına idare eden.",
+			"ARAPCA": "اَلـْوَالِي",
+			"RESIM": null
+		},
+		{
+			"ID": "80",
+			"OKUNUSU": "El-Müteâlî",
+			"ANLAMI": "Aklın mümkün gördüğü her şeyden, her hâl ve tavırdan münezzeh olan.",
+			"ARAPCA": "اَلـْمُتَعَالِي",
+			"RESIM": null
+		},
+		{
+			"ID": "81",
+			"OKUNUSU": "El-Berr",
+			"ANLAMI": "Kullarına iyilik ve ihsanı, nimetleri bol olan.",
+			"ARAPCA": "اَلـْبـَـــرُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "82",
+			"OKUNUSU": "Et-Tevvâb",
+			"ANLAMI": "Tövbeleri kabul eden.",
+			"ARAPCA": "اَلتَّوَّابُ",
+			"RESIM": null
+		},
+		{
+			"ID": "83",
+			"OKUNUSU": "El-Müntakim",
+			"ANLAMI": "Suçluları adaletiyle cezalandırıp intikam alan.",
+			"ARAPCA": "اَلـْمُنـْتَقِمُ",
+			"RESIM": null
+		},
+		{
+			"ID": "84",
+			"OKUNUSU": "El-Afüvv",
+			"ANLAMI": "Affı ve rahmeti çok olan, bağışlayan.",
+			"ARAPCA": "اَلـْعــَفـُوُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "85",
+			"OKUNUSU": "Er-Raûf",
+			"ANLAMI": "Pek acıyan, lütuf ve merhametle pek esirgeyen.",
+			"ARAPCA": "الـرَّؤفُ",
+			"RESIM": null
+		},
+		{
+			"ID": "86",
+			"OKUNUSU": "Mâlikü’l-Mülk",
+			"ANLAMI": "Mülkün ebedi sahibi olan.",
+			"ARAPCA": "مَالِكُ الـْمُلـكِ",
+			"RESIM": null
+		},
+		{
+			"ID": "87",
+			"OKUNUSU": "Zü’l- Celal-i ve’l-İkram",
+			"ANLAMI": "Her türlü büyüklüğün, her türlü keremin sahibi olan.",
+			"ARAPCA": "ذ ُوالـْجَلالِ وَالإكـْرَامِ",
+			"RESIM": null
+		},
+		{
+			"ID": "88",
+			"OKUNUSU": "El-Muksıt",
+			"ANLAMI": "Bütün işleri birbirine uygun ve denk yapan.",
+			"ARAPCA": "اَلـْمُقْسِط ُ",
+			"RESIM": null
+		},
+		{
+			"ID": "89",
+			"OKUNUSU": "El-Câmî",
+			"ANLAMI": "İstediğini istediği zaman istediği yerde toplayan.",
+			"ARAPCA": "اَلـْجَـامِعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "90",
+			"OKUNUSU": "El-Ganîyy",
+			"ANLAMI": "Çok zengin olan.",
+			"ARAPCA": "اَلـْغــَنِيُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "91",
+			"OKUNUSU": "El-Muğnî",
+			"ANLAMI": "İstediğini zengin eden.",
+			"ARAPCA": "اَلـْمُغـْنِي",
+			"RESIM": null
+		},
+		{
+			"ID": "92",
+			"OKUNUSU": "El-Mânî",
+			"ANLAMI": "Bazı şeylerin meydana gelmesine müsaade etmeyen, engelleyen.",
+			"ARAPCA": "اَلـْمــَانِعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "93",
+			"OKUNUSU": "Ed-Dâr",
+			"ANLAMI": "Elem ve zarar verecek şeyleri yaratan, hüsrana ugratan.",
+			"ARAPCA": "اَلضَّــارُّ",
+			"RESIM": null
+		},
+		{
+			"ID": "94",
+			"OKUNUSU": "En-Nâfi",
+			"ANLAMI": "Hayır ve menfaat verecek şeyleri yaratan.",
+			"ARAPCA": "اَلنَّــافـِعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "95",
+			"OKUNUSU": "En-Nûr",
+			"ANLAMI": "Alemleri nurlandıran.",
+			"ARAPCA": "اَلنُّــــورُ",
+			"RESIM": null
+		},
+		{
+			"ID": "96",
+			"OKUNUSU": "El-Hâdî",
+			"ANLAMI": "Hidayete ve doğru yola erdiren.",
+			"ARAPCA": "اَلـْـهَِادِي",
+			"RESIM": null
+		},
+		{
+			"ID": "97",
+			"OKUNUSU": "El-Bedî",
+			"ANLAMI": "Örneksiz, misilsiz, hayret verici nice âlemler icad eden.",
+			"ARAPCA": "اَلـْبَــدِيعُ",
+			"RESIM": null
+		},
+		{
+			"ID": "98",
+			"OKUNUSU": "El-Bâki",
+			"ANLAMI": "Varlığının sonu bulunmayan, ebedi olan.",
+			"ARAPCA": "اَلـْـبَا قِي",
+			"RESIM": null
+		},
+		{
+			"ID": "99",
+			"OKUNUSU": "El-Vâris",
+			"ANLAMI": "Servetlerin gerçek sahibi olan.",
+			"ARAPCA": "اَلـْواَرِثُ",
+			"RESIM": null
+		},
+		{
+			"ID": "100",
+			"OKUNUSU": "Er-Reşid",
+			"ANLAMI": "Bütün işleri ezeli takdirine uygun bir nizam ve hikmet üzere sonuna ulaştıran.",
+			"ARAPCA": "اَلرَّشــِيدُ",
+			"RESIM": null
+		},
+		{
+			"ID": "101",
+			"OKUNUSU": "Es-Sabûr",
+			"ANLAMI": "Çok sabırlı olan.",
+			"ARAPCA": "اَلصـَّبُورُ",
+			"RESIM": null
+		}
+	]
+}
