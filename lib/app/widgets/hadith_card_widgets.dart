@@ -5,7 +5,6 @@ import '../controllers/hadith_controller.dart';
 
 class HadithCardWidget extends StatelessWidget {
   const HadithCardWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     final HadithController controller = Get.find<HadithController>();

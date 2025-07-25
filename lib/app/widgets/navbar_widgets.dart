@@ -18,11 +18,10 @@ class CustomNavbarWidgets extends StatefulWidget {
 class _CustomNavbarWidgetsState extends State<CustomNavbarWidgets> {
   final NavbarController controller = Get.put(NavbarController());
 
-  final List<Widget> _pages = const [PrayerView(), DhikrView(), QiblahFinder()];
+  final List<Widget> _pages = [const PrayerView(), const DhikrView(), const QiblahFinder()];
 
   @override
   Widget build(BuildContext context) {
-    final bool isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       appBar: AppBarWidgets(),
       extendBody: true,
@@ -74,7 +73,7 @@ class _CustomNavbarWidgetsState extends State<CustomNavbarWidgets> {
                         duration: const Duration(milliseconds: 300),
                         curve: Curves.easeInOut,
                         decoration: BoxDecoration(
-                          color: isSelected ? AppColors.greenColor : Colors.transparent,
+                          color: isSelected ? AppColors.purpleColor : Colors.transparent,
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: const EdgeInsets.symmetric(horizontal: 8),
