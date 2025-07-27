@@ -9,7 +9,6 @@ class PrayerTimesProvider extends ChangeNotifier {
   String errorMessage = '';
   String selectedLocation = '';
   final TextEditingController searchController = TextEditingController();
-
   PrayerTimesProvider() {
     searchController.addListener(() {
       searchLocations(searchController.text);

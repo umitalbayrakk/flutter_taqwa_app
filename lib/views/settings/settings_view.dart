@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/controllers/app_bar_controller.dart';
+import 'package:flutter_taqwa_app/app/controllers/prayer_card_controller.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:flutter_taqwa_app/views/prayer_selected_time/prayer_time_view.dart';
 import 'package:get/get.dart';
@@ -9,10 +10,16 @@ class SettingsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cardController = Get.put(PrayerController());
     final AppBarController controller = Get.put(AppBarController());
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
-      appBar: AppBar(title: const Text("Ayarlar"), centerTitle: true, elevation: 0),
+      appBar: AppBar(
+        backgroundColor: AppColors.whiteColor,
+        title: Text("Ayarlar", style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold)),
+        centerTitle: false,
+        elevation: 0,
+      ),
       backgroundColor: AppColors.backgroundColor,
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -31,9 +38,14 @@ class SettingsView extends StatelessWidget {
             trailingText: isDark ? "Karanlık" : "Aydınlık",
             onTap: () {},
           ),
-          _buildTile(icon: Icons.location_on, title: "Konum Seç", onTap: () {
-            controller.navigateWithSlideTransition(context, const PrayerTimesScreen());
-          }),
+          _buildTile(
+            icon: Icons.location_on,
+            title: "Konum Seç",
+            onTap: () {
+              controller.navigateWithSlideTransition(context, const PrayerTimesScreen());
+              cardController.navigateAndFetchPrayerTimes();
+            },
+          ),
 
           _buildTile(icon: Icons.info_outline, title: "Hakkımızda", onTap: () {}),
           _buildTile(icon: Icons.star_border, title: "Puanla", onTap: () {}),

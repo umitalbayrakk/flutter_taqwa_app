@@ -31,7 +31,7 @@ class PrayerTimesScreen extends StatelessWidget {
                               : null,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Colors.grey), // istediğin renk
+                        borderSide: const BorderSide(color: Colors.grey), 
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),

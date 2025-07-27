@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_taqwa_app/app/controllers/navbar_controller.dart';
 import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
-import 'package:flutter_taqwa_app/views/dhikr/dhikr_view.dart';
+import 'package:flutter_taqwa_app/views/religious_information/religious_information.dart';
+import 'package:flutter_taqwa_app/views/rosary/rosary_view.dart';
 import 'package:flutter_taqwa_app/views/prayer/prayer_view.dart';
-import 'package:flutter_taqwa_app/views/qıblah_finder/qıblah_finder.dart';
 import 'package:get/get.dart';
 
 class CustomNavbarWidgets extends StatefulWidget {
@@ -18,7 +18,7 @@ class CustomNavbarWidgets extends StatefulWidget {
 class _CustomNavbarWidgetsState extends State<CustomNavbarWidgets> {
   final NavbarController controller = Get.put(NavbarController());
 
-  final List<Widget> _pages = [const PrayerView(), const DhikrView(), const QiblahFinder()];
+  final List<Widget> _pages = [const PrayerView(), const RosaryView(), ReligiousInformation()];
 
   @override
   Widget build(BuildContext context) {
@@ -58,8 +58,8 @@ class _CustomNavbarWidgetsState extends State<CustomNavbarWidgets> {
                       break;
                     case 2:
                     default:
-                      iconData = Icons.explore;
-                      label = 'Kıble';
+                      iconData = Icons.menu_book_rounded;
+                      label = 'Dini Bilgiler';
                       break;
                   }
 
@@ -73,7 +73,7 @@ class _CustomNavbarWidgetsState extends State<CustomNavbarWidgets> {
                         duration: const Duration(milliseconds: 300),
                         curve: Curves.easeInOut,
                         decoration: BoxDecoration(
-                          color: isSelected ? AppColors.purpleColor : Colors.transparent,
+                          color: isSelected ? AppColors.greenColor : Colors.transparent,
                           borderRadius: BorderRadius.circular(24),
                         ),
                         padding: const EdgeInsets.symmetric(horizontal: 8),

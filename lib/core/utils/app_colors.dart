@@ -8,4 +8,5 @@ class AppColors {
   static const Color purpleColor = Color(0xFF5B25C6);
   static const Color tagColor = Color(0xFFaeaeae);
   static const Color keraatColor = Color(0xFFff575f);
+  static const Color redColor = Color(0xFFDC2525);
 }

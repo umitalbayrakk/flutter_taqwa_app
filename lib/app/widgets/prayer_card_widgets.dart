@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/controllers/prayer_card_controller.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
+import 'package:flutter_taqwa_app/views/q%C4%B1blah_finder/q%C4%B1blah_finder.dart';
 import 'package:get/get.dart';
 
 class PrayerCardWidgets extends StatelessWidget {
@@ -11,7 +12,7 @@ class PrayerCardWidgets extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.9,
       height: 280,
-      decoration: BoxDecoration(color: AppColors.purpleColor, borderRadius: BorderRadius.circular(20.0)),
+      decoration: BoxDecoration(color: AppColors.greenColor, borderRadius: BorderRadius.circular(20.0)),
       padding: const EdgeInsets.all(16.0),
       child: Obx(
         () => Column(
@@ -39,7 +40,9 @@ class PrayerCardWidgets extends StatelessWidget {
                       style: const TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.bold),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        controller.navigateWithSlideTransition(context, const QiblahFinder());
+                      },
                       child: Container(
                         height: 40,
                         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),

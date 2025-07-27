@@ -8,61 +8,26 @@ class AppBarWidgets extends StatelessWidget implements PreferredSizeWidget {
   const AppBarWidgets({super.key});
 
   @override
-  Size get preferredSize => const Size.fromHeight(80.0); // Biraz daha yüksek
+  Size get preferredSize => const Size.fromHeight(80.0);
 
   @override
   Widget build(BuildContext context) {
     final AppBarController controller = Get.put(AppBarController());
 
     return AppBar(
+      automaticallyImplyLeading: true,
       actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 12.0),
-          child: IconButton(
-            icon: Container(
-              padding: const EdgeInsets.all(8.0),
-              decoration: BoxDecoration(
-                color: AppColors.whiteColor,
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 6.0, offset: const Offset(0, 3)),
-                ],
-              ),
-              child: const Icon(Icons.menu_rounded, size: 24),
-            ),
-            onPressed: () {
-              controller.navigateWithSlideTransition(context, const SettingsView());
-            },
-          ),
+        IconButton(
+          icon: const Icon(Icons.menu_rounded, size: 24),
+          onPressed: () {
+            controller.navigateWithSlideTransition(context, const SettingsView());
+          },
         ),
       ],
       backgroundColor: AppColors.whiteColor,
-      centerTitle: true,
+      centerTitle: false,
       elevation: 0,
-      title: RichText(
-        text: TextSpan(
-          children: [
-            TextSpan(
-              text: "Taq",
-              style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: AppColors.tagColor, 
-              ),
-            ),
-            TextSpan(
-              text: "wa",
-              style: Theme.of(
-                context,
-              ).textTheme.headlineLarge?.copyWith(fontWeight: FontWeight.bold, color: Colors.black),
-            ),
-          ],
-        ),
-      ),
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(
-          bottom: Radius.circular(15),
-        ),
-      ),
+      title: Image.asset("assets/images/logo2.png", width: 80, height: 80),
     );
   }
 }
