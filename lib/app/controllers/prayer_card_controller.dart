@@ -2,7 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:hijri/hijri_calendar.dart';
 import 'package:flutter_taqwa_app/views/prayer_selected_time/prayer_time_view.dart';
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 class PrayerController extends GetxController {
   final GetStorage _storage = GetStorage();
@@ -12,12 +15,39 @@ class PrayerController extends GetxController {
 
   var nextPrayerName = ''.obs;
   var nextPrayerDuration = Rxn<Duration>();
+  var formattedDate = ''.obs;
+  var formattedHijriDate = ''.obs;
 
   Timer? _timer;
+
+  final List<String> prayerNames = ['İmsak', 'Güneş', 'Öğle', 'İkindi', 'Akşam', 'Yatsı'];
+  var currentPrayerIndex = RxnInt();
+
+  final Map<int, String> turkishHijriMonths = {
+    1: 'Muharrem',
+    2: 'Safer',
+    3: 'Rebîülevvel',
+    4: 'Rebîülâhir',
+    5: 'Cemâziyelevvel',
+    6: 'Cemâziyelâhir',
+    7: 'Recep',
+    8: 'Şaban',
+    9: 'Ramazan',
+    10: 'Şevval',
+    11: 'Zilkade',
+    12: 'Zilhicce',
+  };
 
   @override
   void onInit() {
     super.onInit();
+
+    initializeDateFormatting('tr_TR', null).then((_) {
+      final now = DateTime.now();
+      formattedDate.value = DateFormat("d MMMM y EEEE", "tr_TR").format(now);
+      final hijriDate = HijriCalendar.fromDate(now);
+      formattedHijriDate.value = "${hijriDate.hDay} ${turkishHijriMonths[hijriDate.hMonth]} ${hijriDate.hYear}";
+    });
 
     final savedPlace = _storage.read<String>('selected_place');
     final savedTimes = _storage.read<List>('today_times');
@@ -60,12 +90,15 @@ class PrayerController extends GetxController {
     selectedPlace.value = place;
     todayTimes.value = timesList;
 
-    // Kalıcı olarak kaydet
     _storage.write('selected_place', place);
     _storage.write('today_times', timesList);
 
     _calculateNextPrayerTime();
     _startTimer();
+
+    final now = DateTime.now();
+    final hijriDate = HijriCalendar.fromDate(now);
+    formattedHijriDate.value = "${hijriDate.hDay} ${turkishHijriMonths[hijriDate.hMonth]} ${hijriDate.hYear}";
   }
 
   void _calculateNextPrayerTime() {
@@ -77,7 +110,6 @@ class PrayerController extends GetxController {
 
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
-    final prayerNames = ['İmsak', 'Güneş', 'Öğle', 'İkindi', 'Akşam', 'Yatsı'];
 
     for (var i = 0; i < todayTimes.length; i++) {
       final parts = todayTimes[i].split(':');
@@ -85,6 +117,7 @@ class PrayerController extends GetxController {
       if (prayerTime.isAfter(now)) {
         nextPrayerDuration.value = prayerTime.difference(now);
         nextPrayerName.value = prayerNames[i];
+        currentPrayerIndex.value = i - 1 < 0 ? null : i - 1; //  Şu anki vakit
         return;
       }
     }
@@ -96,12 +129,39 @@ class PrayerController extends GetxController {
 
     nextPrayerDuration.value = nextImsak.difference(now);
     nextPrayerName.value = 'İmsak';
+    currentPrayerIndex.value = 5; // Son vakit: Yatsı
+  }
+
+  String getIconFileName(int index) {
+    switch (index) {
+      case 0:
+        return "imsaq";
+      case 1:
+        return "sunny";
+      case 2:
+        return "noon";
+      case 3:
+        return "afternoon";
+      case 4:
+        return "night";
+      case 5:
+        return "isha";
+      default:
+        return "sunny";
+    }
   }
 
   void _startTimer() {
     _timer?.cancel();
     _timer = Timer.periodic(const Duration(seconds: 1), (_) {
       _calculateNextPrayerTime();
+
+      final now = DateTime.now();
+      final hijriDate = HijriCalendar.fromDate(now);
+      final newHijriDate = "${hijriDate.hDay} ${turkishHijriMonths[hijriDate.hMonth]} ${hijriDate.hYear}";
+      if (formattedHijriDate.value != newHijriDate) {
+        formattedHijriDate.value = newHijriDate;
+      }
     });
   }
 

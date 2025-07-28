@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_taqwa_app/app/controllers/prayer_times_provider.dart';
 import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
@@ -31,7 +32,7 @@ class PrayerTimesScreen extends StatelessWidget {
                               : null,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Colors.grey), 
+                        borderSide: const BorderSide(color: Colors.grey),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -69,9 +70,13 @@ class PrayerTimesScreen extends StatelessWidget {
       return _buildLocationsList(context, provider);
     } else {
       return Center(
-        child: Text(
-          provider.searchController.text.isEmpty ? 'Arama yapmak için en az 3 karakter girin' : 'Sonuç bulunamadı',
-          style: const TextStyle(fontSize: 18),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SvgPicture.asset("assets/svg/Frame 22.svg", color: AppColors.darkThemeColor, width: 80, height: 80),
+            SvgPicture.asset("assets/svg/Frame 21.svg", color: AppColors.darkThemeColor, width: 80, height: 80),
+            SvgPicture.asset("assets/svg/Group 20.svg", color: AppColors.darkThemeColor, width: 80, height: 80),
+          ],
         ),
       );
     }
@@ -85,7 +90,7 @@ class PrayerTimesScreen extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.only(bottom: 10),
           child: Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), color: AppColors.purpleColor),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), color: AppColors.selectedPrayerColor),
             child: ListTile(
               title: Text(
                 location['name'],

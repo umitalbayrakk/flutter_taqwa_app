@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 class NavbarController extends GetxController {
   var selectedIndex = 0.obs;
 
-  void changeIndex(int index) {
+  void changeTab(int index) {
     selectedIndex.value = index;
   }
 }

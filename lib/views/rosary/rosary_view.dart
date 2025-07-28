@@ -19,7 +19,7 @@ class RosaryView extends StatelessWidget {
               }
             },
             child: Scaffold(
-              backgroundColor: Colors.grey[100],
+              backgroundColor: AppColors.backgroundColor,
               body: SafeArea(
                 child: Column(
                   children: [

@@ -15,7 +15,7 @@ class SettingsView extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.whiteColor,
+        backgroundColor: AppColors.backgroundColor,
         title: Text("Ayarlar", style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold)),
         centerTitle: false,
         elevation: 0,
@@ -24,8 +24,6 @@ class SettingsView extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         children: [
-          _buildProfileHeader(),
-          const SizedBox(height: 20),
           _buildSectionTitle("Hesap"),
           _buildTile(icon: Icons.person_outline, title: "Profilim", onTap: () {}),
           _buildTile(icon: Icons.lock_outline, title: "Gizlilik", onTap: () {}),
@@ -58,27 +56,6 @@ class SettingsView extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  Widget _buildProfileHeader() {
-    return Row(
-      children: [
-        const CircleAvatar(
-          radius: 30,
-          backgroundColor: Color(0xFFE0E0E0),
-          child: Icon(Icons.person, size: 30, color: Colors.black),
-        ),
-        const SizedBox(width: 12),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            Text("Ümit Albayrak", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-            SizedBox(height: 2),
-            Text("umit@mail.com", style: TextStyle(fontSize: 13, color: Colors.grey)),
-          ],
-        ),
-      ],
     );
   }
 

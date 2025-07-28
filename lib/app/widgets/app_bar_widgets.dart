@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_taqwa_app/app/controllers/app_bar_controller.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:flutter_taqwa_app/views/settings/settings_view.dart';
@@ -18,16 +19,15 @@ class AppBarWidgets extends StatelessWidget implements PreferredSizeWidget {
       automaticallyImplyLeading: true,
       actions: [
         IconButton(
-          icon: const Icon(Icons.menu_rounded, size: 24),
+          icon: SvgPicture.asset("assets/svg/menu.svg", color: AppColors.darkThemeColor, width: 30, height: 30),
           onPressed: () {
             controller.navigateWithSlideTransition(context, const SettingsView());
           },
         ),
       ],
-      backgroundColor: AppColors.whiteColor,
+      backgroundColor: AppColors.backgroundColor,
       centerTitle: false,
-      elevation: 0,
-      title: Image.asset("assets/images/logo2.png", width: 80, height: 80),
+      title: Image.asset("assets/images/logo2.png", width: 80, height: 80, color: AppColors.blackColor),
     );
   }
 }
