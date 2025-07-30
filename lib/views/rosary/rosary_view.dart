@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/controllers/rosary_controller.dart';
+import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:provider/provider.dart';
 
@@ -19,6 +20,7 @@ class RosaryView extends StatelessWidget {
               }
             },
             child: Scaffold(
+              appBar: AppBarWidgets(showBackButton: false),
               backgroundColor: AppColors.backgroundColor,
               body: SafeArea(
                 child: Column(
@@ -168,7 +170,7 @@ class _DhikrChip extends StatelessWidget {
             fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
           ),
         ),
-        backgroundColor: isSelected ? AppColors.greenColor : Colors.grey[300],
+        backgroundColor: isSelected ? AppColors.darkThemeColor : Colors.grey[300],
         deleteIcon: isLongPressedMode ? const Icon(Icons.delete) : null,
         onDeleted: isLongPressedMode ? onRemove : null,
       ),
@@ -198,31 +200,9 @@ class _CountUpButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Provider.of<RosaryViewModel>(context, listen: false);
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 30),
-      child: ElevatedButton(
-        onPressed: controller.incrementRosaryCount,
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.greenColor,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-          padding: const EdgeInsets.all(16),
-        ),
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.radio_button_checked, color: AppColors.whiteColor, size: 30),
-              SizedBox(width: 8),
-              Text(
-                'Zikir Matik',
-                style: Theme.of(
-                  context,
-                ).textTheme.headlineMedium?.copyWith(color: AppColors.whiteColor, fontWeight: FontWeight.bold),
-              ),
-            ],
-          ),
-        ),
-      ),
+    return GestureDetector(
+      onTap: controller.incrementRosaryCount,
+      child: Container(decoration: BoxDecoration(color: AppColors.darkThemeColor, shape: BoxShape.circle)),
     );
   }
 }
@@ -235,11 +215,36 @@ class _ResetButton extends StatelessWidget {
       context: context,
       builder:
           (_) => AlertDialog(
-            title: const Text('Sayacı Sıfırla'),
-            content: const Text('Sayacı Sıfırlamak istediğinizden emin misiniz?'),
+            backgroundColor: AppColors.whiteColor,
+            title: Text(
+              'Sayacı Sıfırla',
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+            ),
+            content: Text(
+              'Sayacı Sıfırlamak istediğinizden emin misiniz?',
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold),
+            ),
             actions: [
-              TextButton(onPressed: () => Navigator.of(context).pop(false), child: const Text('Çıkış')),
-              TextButton(onPressed: () => Navigator.of(context).pop(true), child: const Text('Sıfırla')),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: AppColors.redColor),
+                onPressed: () => Navigator.of(context).pop(false),
+                child: Text(
+                  'Çıkış',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: AppColors.whiteColor),
+                ),
+              ),
+              TextButton(
+                style: TextButton.styleFrom(backgroundColor: AppColors.greenColor),
+                onPressed: () => Navigator.of(context).pop(true),
+                child: Text(
+                  'Sıfırla',
+                  style: Theme.of(
+                    context,
+                  ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: AppColors.whiteColor),
+                ),
+              ),
             ],
           ),
     );

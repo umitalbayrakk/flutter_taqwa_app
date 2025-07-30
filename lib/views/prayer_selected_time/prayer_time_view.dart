@@ -14,7 +14,7 @@ class PrayerTimesScreen extends StatelessWidget {
       create: (_) => PrayerTimesProvider(),
       child: Scaffold(
         backgroundColor: AppColors.backgroundColor,
-        appBar: AppBarWidgets(),
+        appBar: AppBarWidgets(showBackButton: false),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Consumer<PrayerTimesProvider>(
@@ -89,28 +89,25 @@ class PrayerTimesScreen extends StatelessWidget {
         final location = provider.locations[index];
         return Padding(
           padding: const EdgeInsets.only(bottom: 10),
-          child: Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), color: AppColors.selectedPrayerColor),
-            child: ListTile(
-              title: Text(
-                location['name'],
-                style: Theme.of(
-                  context,
-                ).textTheme.bodyLarge?.copyWith(color: AppColors.whiteColor, fontWeight: FontWeight.bold, fontSize: 16),
-              ),
-              subtitle: Text(
-                '${location['stateName']} • ${location['country']}',
-                style: Theme.of(
-                  context,
-                ).textTheme.bodySmall?.copyWith(color: AppColors.whiteColor, fontWeight: FontWeight.w400, fontSize: 14),
-              ),
-              onTap: () async {
-                await provider.fetchPrayerTimes(location['id'].toString());
-                if (provider.prayerData != null) {
-                  Navigator.pop(context, {'place': provider.selectedLocation, 'times': provider.prayerData!['times']});
-                }
-              },
+          child: ListTile(
+            title: Text(
+              location['name'],
+              style: Theme.of(
+                context,
+              ).textTheme.bodyLarge?.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.bold, fontSize: 16),
             ),
+            subtitle: Text(
+              '${location['stateName']} • ${location['country']}',
+              style: Theme.of(
+                context,
+              ).textTheme.bodySmall?.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.w400, fontSize: 14),
+            ),
+            onTap: () async {
+              await provider.fetchPrayerTimes(location['id'].toString());
+              if (provider.prayerData != null) {
+                Navigator.pop(context, {'place': provider.selectedLocation, 'times': provider.prayerData!['times']});
+              }
+            },
           ),
         );
       },

@@ -6,7 +6,12 @@ import 'package:flutter_taqwa_app/views/settings/settings_view.dart';
 import 'package:get/get.dart';
 
 class AppBarWidgets extends StatelessWidget implements PreferredSizeWidget {
-  const AppBarWidgets({super.key});
+  final bool showBackButton; 
+
+  const AppBarWidgets({
+    super.key,
+    this.showBackButton = true, 
+  });
 
   @override
   Size get preferredSize => const Size.fromHeight(80.0);
@@ -16,7 +21,7 @@ class AppBarWidgets extends StatelessWidget implements PreferredSizeWidget {
     final AppBarController controller = Get.put(AppBarController());
 
     return AppBar(
-      automaticallyImplyLeading: true,
+      automaticallyImplyLeading: showBackButton, // Artık dinamik
       actions: [
         IconButton(
           icon: SvgPicture.asset("assets/svg/menu.svg", color: AppColors.darkThemeColor, width: 30, height: 30),

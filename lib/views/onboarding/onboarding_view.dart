@@ -1,157 +1,226 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_taqwa_app/app/controllers/onboarding_controller.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:get/get.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class OnboardingView extends StatelessWidget {
   final OnboardingController controller = Get.put(OnboardingController());
+
+  final List<IconData> icons = const [Icons.location_on_outlined, Icons.widgets_outlined, Icons.book_outlined];
 
   OnboardingView({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Scaffold(
-      backgroundColor: AppColors.greenColor,
       body: Stack(
         children: [
-          // Arkaplan deseni
-          Positioned.fill(child: CustomPaint(painter: _OnboardingBackgroundPainter())),
-
-          // Ana içerik
-          Column(
-            children: [
-              Expanded(
-                child: PageView(
-                  controller: controller.pageController,
-                  onPageChanged: controller.onPageChanged,
-                  physics: const ClampingScrollPhysics(),
+          // Gradient Background
+          Obx(
+            () => AnimatedContainer(
+              duration: const Duration(milliseconds: 500),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: _getPageGradient(controller.currentPage.value),
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+            ),
+          ),
+          // Page Content
+          PageView.builder(
+            controller: controller.pageController,
+            itemCount: controller.pages.length,
+            onPageChanged: (index) {
+              print('Page changed to: $index');
+              controller.onPageChanged(index);
+            },
+            physics: const ClampingScrollPhysics(),
+            itemBuilder: (context, index) {
+              if (index >= controller.pages.length) {
+                return const SizedBox(); // Prevent index out of bounds
+              }
+              final page = controller.pages[index];
+              return Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Column(
                   children: [
-                    _buildOnboardingPage(
-                      context,
-                      "assets/svg/mosque.svg",
-                      "Namaz Vakitleriniz",
-                      "Bulunduğunuz konuma göre tam doğru namaz vakitlerini gösterir",
+                    const Spacer(flex: 2),
+                    // Icon Container
+                    AnimatedOpacity(
+                      opacity: controller.currentPage.value == index ? 1.0 : 0.5,
+                      duration: const Duration(milliseconds: 500),
+                      child: Container(
+                        height: size.width * 0.4,
+                        width: size.width * 0.4,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: AppColors.whiteColor.withOpacity(0.1),
+                          border: Border.all(color: AppColors.whiteColor.withOpacity(0.24), width: 1),
+                          boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 20, spreadRadius: 2)],
+                        ),
+                        child: Center(child: Icon(icons[index], size: size.width * 0.2, color: AppColors.whiteColor)),
+                      ),
                     ),
-                    _buildOnboardingPage(
-                      context,
-                      "assets/svg/prayer.svg",
-                      "Hatırlatıcılar",
-                      "Namaz vakitleri için kişiselleştirilmiş hatırlatıcılar ayarlayın",
+                    const SizedBox(height: 40),
+                    // Title
+                    AnimatedSlide(
+                      offset: controller.currentPage.value == index ? Offset.zero : const Offset(0, 0.2),
+                      duration: const Duration(milliseconds: 600),
+                      curve: Curves.easeOut,
+                      child: Text(
+                        page.title,
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.spaceGrotesk(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.whiteColor,
+                        ),
+                        semanticsLabel: page.title,
+                      ),
                     ),
-                    _buildOnboardingPage(
-                      context,
-                      "assets/svg/quran.svg",
-                      "Dini Rehber",
-                      "Kur'an-ı Kerim, dualar ve dini bilgiler elinizin altında",
+                    const SizedBox(height: 16),
+                    // Description
+                    AnimatedSlide(
+                      offset: controller.currentPage.value == index ? Offset.zero : const Offset(0, 0.2),
+                      duration: const Duration(milliseconds: 700),
+                      curve: Curves.easeOut,
+                      child: Text(
+                        page.description,
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                          fontSize: 16,
+                          color: AppColors.whiteColor.withOpacity(0.7),
+                          height: 1.6,
+                        ),
+                        semanticsLabel: page.description,
+                      ),
+                    ),
+                    const Spacer(flex: 3),
+                  ],
+                ),
+              );
+            },
+          ),
+          // Bottom Controls
+          Positioned(
+            bottom: 40,
+            left: 24,
+            right: 24,
+            child: Column(
+              children: [
+                // Page Indicators
+                Obx(
+                  () => Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(controller.pages.length, (index) {
+                      return AnimatedContainer(
+                        duration: const Duration(milliseconds: 300),
+                        margin: const EdgeInsets.symmetric(horizontal: 4),
+                        width: controller.currentPage.value == index ? 20 : 8,
+                        height: 8,
+                        decoration: BoxDecoration(
+                          color:
+                              controller.currentPage.value == index
+                                  ? AppColors.whiteColor
+                                  : AppColors.whiteColor.withOpacity(0.38),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      );
+                    }),
+                  ),
+                ),
+                const SizedBox(height: 24),
+                // Buttons
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // Skip Button
+                    Obx(
+                      () =>
+                          controller.currentPage.value != controller.pages.length - 1
+                              ? TextButton(
+                                onPressed: () {
+                                  print('Skip button pressed');
+                                  HapticFeedback.lightImpact();
+                                  controller.completeOnboarding();
+                                },
+                                child: Text(
+                                  'Atla',
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 16,
+                                    color: AppColors.whiteColor.withOpacity(0.8),
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              )
+                              : const SizedBox(),
+                    ),
+                    // Next/Start Button
+                    Obx(
+                      () => SizedBox(
+                        width: 150,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            try {
+                              print(
+                                'Next button pressed, currentPage: ${controller.currentPage.value}, hasClients: ${controller.pageController.hasClients}',
+                              );
+                              HapticFeedback.lightImpact();
+                              if (!controller.pageController.hasClients) {
+                                print('PageController not ready');
+                                Get.snackbar('Hata', 'Sayfa kontrolcüsü hazır değil, lütfen tekrar deneyin.');
+                                return;
+                              }
+                              if (controller.currentPage.value == controller.pages.length - 1) {
+                                controller.completeOnboarding();
+                              } else {
+                                controller.pageController.nextPage(
+                                  duration: const Duration(milliseconds: 500),
+                                  curve: Curves.easeInOutCubic,
+                                );
+                                print('Next page triggered');
+                              }
+                            } catch (e, stackTrace) {
+                              print('Error in Next button: $e');
+                              print('StackTrace: $stackTrace');
+                              Get.snackbar('Hata', 'Sayfa geçişi başarısız: $e');
+                            }
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.whiteColor,
+                            foregroundColor: AppColors.greenColor,
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                            textStyle: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600),
+                          ),
+                          child: Text(
+                            controller.currentPage.value == controller.pages.length - 1 ? 'Hemen Başla' : 'Sonraki',
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
-              ),
-
-              // Sayfa göstergesi
-              Obx(
-                () => AnimatedSmoothIndicator(
-                  activeIndex: controller.currentPage.value,
-                  count: 3,
-                  effect: const ExpandingDotsEffect(
-                    activeDotColor: AppColors.whiteColor,
-                    dotColor: Colors.white54,
-                    dotHeight: 8,
-                    dotWidth: 8,
-                    spacing: 10,
-                    expansionFactor: 3,
-                  ),
-                ),
-              ),
-
-              const SizedBox(height: 32),
-
-              // İlerleme butonu
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32.0),
-                child: Obx(() {
-                  final isLastPage = controller.currentPage.value == 2;
-                  return ElevatedButton(
-                    onPressed: () async {
-                      if (isLastPage) {
-                        controller.completeOnboarding();
-                      } else {
-                        // Kaydırma animasyonu ile sonraki sayfaya geç
-                        await controller.pageController.nextPage(
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeInOut,
-                        );
-                        controller.currentPage.value++;
-                      }
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: AppColors.whiteColor,
-                      foregroundColor: AppColors.greenColor,
-                      minimumSize: const Size(double.infinity, 56),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-                      elevation: 0,
-                      shadowColor: Colors.transparent,
-                    ),
-                    child: Text(
-                      isLastPage ? "Hemen Başla" : "Sonraki",
-                      style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                  );
-                }),
-              ),
-
-              const SizedBox(height: 24),
-            ],
+              ],
+            ),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildOnboardingPage(BuildContext context, String imagePath, String title, String description) {
-    return Padding(
-      padding: const EdgeInsets.all(32.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgPicture.asset(imagePath, width: 250, height: 250, color: AppColors.whiteColor),
-          const SizedBox(height: 48),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: Theme.of(
-              context,
-            ).textTheme.displaySmall?.copyWith(color: AppColors.whiteColor, fontWeight: FontWeight.bold, height: 1.3),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            description,
-            textAlign: TextAlign.center,
-            style: Theme.of(
-              context,
-            ).textTheme.titleMedium?.copyWith(color: AppColors.whiteColor.withOpacity(0.9), height: 1.6),
-          ),
-        ],
-      ),
-    );
+  List<Color> _getPageGradient(int index) {
+    const gradients = [
+      [Color(0xFF1B5E20), Color(0xFF4CAF50)],
+      [Color(0xFF2E7D32), Color(0xFF81C784)],
+      [Color(0xFF388E3C), Color(0xFFA5D6A7)],
+    ];
+    return gradients[index % gradients.length];
   }
-}
-
-class _OnboardingBackgroundPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint =
-        Paint()
-          ..color = AppColors.whiteColor.withOpacity(0.05)
-          ..style = PaintingStyle.fill;
-
-    canvas.drawCircle(Offset(size.width * 0.8, size.height * 0.9), size.width * 0.3, paint);
-
-    canvas.drawCircle(Offset(size.width * 0.2, size.height * 0.1), size.width * 0.2, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

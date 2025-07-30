@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:flutter_taqwa_app/views/prayer/prayer_view.dart';
 import 'package:flutter_taqwa_app/views/religious_information/religious_information.dart';
@@ -25,7 +24,6 @@ class CustomNavbarWidgets extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Obx(() => Scaffold(
-          appBar: AppBarWidgets(),
           body: _pages[controller.selectedIndex.value],
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: controller.selectedIndex.value,

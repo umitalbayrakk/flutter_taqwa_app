@@ -1,0 +1,134 @@
+{
+    "islam_sartlari": [
+        "Kelime-i Şehadet getirmek",
+        "Namaz kılmak",
+        "Oruç tutmak",
+        "Zekât vermek",
+        "Hacca gitmek"
+    ],
+    "iman_sartlari": [
+        "Allah’a inanmak",
+        "Meleklerine inanmak",
+        "Kitaplarına inanmak",
+        "Peygamberlerine inanmak",
+        "Ahiret gününe inanmak",
+        "Kadere, hayır ve şerrin Allah’tan olduğuna inanmak"
+    ],
+    "namaz": {
+        "vakitler": [
+            "Sabah",
+            "Öğle",
+            "İkindi",
+            "Akşam",
+            "Yatsı"
+        ],
+        "farzlari": [
+            "Niyet etmek",
+            "Tekbir almak",
+            "Kıyam (ayakta durmak)",
+            "Kıraat (Kur'an okumak)",
+            "Rükû",
+            "Secde",
+            "Kade-i ahire (son oturuş)"
+        ],
+        "şartlari": [
+            "Hadesten taharet",
+            "Necasetten taharet",
+            "Setr-i avret",
+            "İstikbal-i kıble",
+            "Vakit",
+            "Niyet"
+        ]
+    },
+    "abdest": {
+        "farzlari": [
+            "Yüzü yıkamak",
+            "Kolları dirseklerle beraber yıkamak",
+            "Başın dörtte birini mesh etmek",
+            "Ayakları topuklarla beraber yıkamak"
+        ],
+        "sünnetleri": [
+            "Besmele ile başlamak",
+            "Misvak kullanmak",
+            "Üçer kere yıkamak",
+            "Aza tertibiyle yıkamak"
+        ]
+    },
+    "oruc": {
+        "tanimi": "İmsaktan iftara kadar yeme, içme ve cinsel ilişkiden uzak durmak.",
+        "farzlari": [
+            "Niyet etmek",
+            "İmsaktan iftara kadar orucu bozacak şeylerden kaçınmak"
+        ],
+        "bozan_durumlar": [
+            "Yeme ve içme",
+            "Cinsel ilişki",
+            "Kusmak (isteyerek)",
+            "Adet görmek"
+        ]
+    },
+    "zekat": {
+        "şartlari": [
+            "Müslüman olmak",
+            "Akıllı ve ergen olmak",
+            "Nisap miktarı mala sahip olmak",
+            "Malın üzerinden bir yıl geçmiş olması"
+        ],
+        "verilecek_kişiler": [
+            "Fakirler",
+            "Miskinler",
+            "Zekât toplayanlar",
+            "Kalpleri İslam’a ısındırılmak istenenler",
+            "Köleler",
+            "Borçlular",
+            "Allah yolunda olanlar",
+            "Yolda kalmış yolcular"
+        ]
+    },
+    "hac": {
+        "farzlari": [
+            "İhrama girmek",
+            "Arafat’ta vakfe yapmak",
+            "Kâbe’yi tavaf etmek"
+        ],
+        "şartlari": [
+            "Müslüman olmak",
+            "Akıllı ve ergen olmak",
+            "Hür olmak",
+            "Yol güvenliğinin bulunması",
+            "Gidiş-geliş masraflarını karşılayacak durumu olmak"
+        ]
+    },
+    "esmaul_husna": [
+        {
+            "isim": "Er-Rahman",
+            "anlam": "Dünyada bütün canlılara merhamet eden"
+        },
+        {
+            "isim": "Er-Rahim",
+            "anlam": "Ahirette yalnız müminlere merhamet eden"
+        },
+        {
+            "isim": "El-Melik",
+            "anlam": "Bütün kainatın sahibi ve hükümdarı"
+        }
+    ],
+    "gunluk_dualar": [
+        {
+            "durum": "Sabah kalkınca",
+            "dua": "Elhamdülillahillezî ahyânâ ba’de mâ emâtenâ ve ileyhin-nüşûr"
+        },
+        {
+            "durum": "Yemek yerken",
+            "dua": "Bismillah"
+        },
+        {
+            "durum": "Yemekten sonra",
+            "dua": "Elhamdülillahillezî et’amenâ ve sekânâ ve cealenâ minel-müslimîn"
+        },
+        {
+            "durum": "Uyumadan önce",
+            "dua": "Bismike Allahumme emûtu ve ahyâ"
+        }
+    ]
+}

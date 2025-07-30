@@ -8,7 +8,7 @@ class QiblahFinder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWidgets(),
+      appBar: AppBarWidgets(showBackButton: true),
       backgroundColor: AppColors.backgroundColor,
       body: SingleChildScrollView(
         child: SafeArea(

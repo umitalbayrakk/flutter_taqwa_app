@@ -1,5 +1,3 @@
-// prayer_card_widgets.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_taqwa_app/app/controllers/prayer_card_controller.dart';
@@ -9,17 +7,18 @@ import 'package:get/get.dart';
 
 class PrayerCardWidgets extends StatelessWidget {
   PrayerCardWidgets({super.key});
+
   final controller = Get.put(PrayerController());
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width * 0.9,
-      height: MediaQuery.of(context).size.height * 0.6,
-      decoration: BoxDecoration(color: AppColors.darkThemeColor, borderRadius: BorderRadius.circular(20.0)),
-      padding: const EdgeInsets.all(16.0),
-      child: Obx(
-        () => Column(
+    return Obx(
+      () => Container(
+        width: MediaQuery.of(context).size.width * 0.9,
+        height: MediaQuery.of(context).size.height * 0.6,
+        decoration: controller.getBackground(controller.selectedBackgroundIndex.value),
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Tarihler ve Sayaç
@@ -39,9 +38,7 @@ class PrayerCardWidgets extends StatelessWidget {
                   : '00:00:00',
               style: const TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.bold),
             ),
-
             const SizedBox(height: 8),
-
             // Lokasyon
             Row(
               children: [
@@ -56,16 +53,14 @@ class PrayerCardWidgets extends StatelessWidget {
                 ),
               ],
             ),
-
             const SizedBox(height: 12),
-
             // Namaz Vakitleri
             Column(
               children: List.generate(6, (index) {
                 return Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Obx(() {
-                    final isCurrent = controller.currentPrayerIndex.value == index;
+                    final isCurrent = controller.currentPrayerSlotIndex.value == index;
                     return _buildPrayerTimeBox(
                       context,
                       controller.prayerNames[index],
@@ -77,9 +72,7 @@ class PrayerCardWidgets extends StatelessWidget {
                 );
               }),
             ),
-
             const SizedBox(height: 10),
-
             // Kıble Butonu
             GestureDetector(
               onTap: () => controller.navigateWithSlideTransition(context, const QiblahFinder()),
@@ -93,18 +86,43 @@ class PrayerCardWidgets extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SvgPicture.asset("assets/svg/compass.svg", width: 20, height: 20, color: AppColors.whiteColor),
+                    SvgPicture.asset("assets/svg/compass.svg", width: 20, height: 20, color: AppColors.blackColor),
                     const SizedBox(width: 5),
                     Text(
                       "Kıble Bul",
                       style: Theme.of(
                         context,
-                      ).textTheme.bodyMedium?.copyWith(color: AppColors.whiteColor, fontWeight: FontWeight.bold),
+                      ).textTheme.bodyMedium?.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
               ),
             ),
+            /* GestureDetector(
+              onTap: () => controller.navigateWithSlideTransition(context, KazaView()),
+              child: Container(
+                height: 40,
+                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                decoration: BoxDecoration(
+                  color: AppColors.whiteColor.withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.calculate, color: AppColors.blackColor, size: 20),
+                    const SizedBox(width: 5),
+                    Text(
+                      "Kaza Takibi",
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodyMedium?.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            */
           ],
         ),
       ),
@@ -119,10 +137,14 @@ class PrayerCardWidgets extends StatelessWidget {
     String svgAssetPath,
     bool isCurrent,
   ) {
+    final Color backgroundColor = isCurrent ? AppColors.selectedPrayerColor.withOpacity(0.3) : Colors.transparent;
+    final Color textColor = isCurrent ? AppColors.whiteColor : AppColors.whiteColor;
+    final Color iconColor = isCurrent ? AppColors.whiteColor : AppColors.whiteColor;
+
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8),
       decoration: BoxDecoration(
-        color: isCurrent ? AppColors.selectedPrayerColor : Colors.transparent,
+        color: backgroundColor,
         border: Border.all(color: AppColors.whiteColor.withOpacity(0.5)),
         borderRadius: BorderRadius.circular(8),
       ),
@@ -133,23 +155,17 @@ class PrayerCardWidgets extends StatelessWidget {
             svgAssetPath,
             width: 20,
             height: 20,
-            colorFilter: const ColorFilter.mode(AppColors.whiteColor, BlendMode.srcIn),
+            colorFilter: ColorFilter.mode(iconColor, BlendMode.srcIn),
           ),
           const SizedBox(width: 5),
           Text(
             "$prayerName:",
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: isCurrent ? AppColors.whiteColor : AppColors.whiteColor,
-              fontWeight: FontWeight.bold,
-            ),
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(color: textColor, fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 2),
           Text(
             prayerTime,
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: isCurrent ? AppColors.whiteColor : AppColors.whiteColor,
-              fontWeight: FontWeight.bold,
-            ),
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(color: textColor, fontWeight: FontWeight.bold),
           ),
         ],
       ),
