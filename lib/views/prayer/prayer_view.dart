@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_taqwa_app/app/controllers/prayer_tracker_controller.dart';
 import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
 import 'package:flutter_taqwa_app/app/widgets/esmaul_husna_card.dart';
 import 'package:flutter_taqwa_app/app/widgets/hadith_card_widgets.dart';
 import 'package:flutter_taqwa_app/app/widgets/prayer_card_widgets.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
-import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class PrayerView extends StatefulWidget {
   const PrayerView({super.key});

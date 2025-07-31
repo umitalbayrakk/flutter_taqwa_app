@@ -3,6 +3,7 @@ import 'package:flutter_taqwa_app/app/controllers/hadith_controller.dart';
 import 'package:flutter_taqwa_app/app/controllers/esmaul_husna_controller.dart';
 import 'package:flutter_taqwa_app/app/routes/app_pages.dart';
 import 'package:flutter_taqwa_app/app/routes/app_routers.dart';
+import 'package:flutter_taqwa_app/app/widgets/navbar_widgets.dart';
 import 'package:flutter_taqwa_app/views/onboarding/onboarding_view.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -24,11 +25,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isFirstTime = box.read('isFirstTime') ?? true; // Onboarding daha önce gösterilmemisse true
+    bool isFirstTime = box.read('isFirstTime') ?? true; 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Taqwa',
-      home: OnboardingView(),
+      home: isFirstTime ? OnboardingView() : CustomNavbarWidgets(), 
       initialRoute: isFirstTime ? AppRouters.onboarding : AppRouters.customNavbarWidgets,
       getPages: AppPages.routers,
     );
