@@ -35,8 +35,5 @@ This project utilizes the following technologies.:
 
 - Notification 
 
-.....??
 
-
-
-  v
+Other Features Coming Soon....
