@@ -1,3 +1,4 @@
+import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_taqwa_app/app/controllers/prayer_card_controller.dart';
@@ -79,14 +80,11 @@ class PrayerCardWidgets extends StatelessWidget {
               child: Container(
                 height: 40,
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-                decoration: BoxDecoration(
-                  color: AppColors.whiteColor.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(8),
-                ),
+                decoration: BoxDecoration(color: AppColors.whiteColor, borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SvgPicture.asset("assets/svg/compass.svg", width: 20, height: 20, color: AppColors.blackColor),
+                    Icon(FeatherIcons.compass, color: AppColors.blackColor, size: 20),
                     const SizedBox(width: 5),
                     Text(
                       "Kıble Bul",

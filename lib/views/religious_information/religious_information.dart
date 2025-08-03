@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_taqwa_app/app/controllers/religious_info_controller.dart';
 import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
-import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 
 class ReligiousInformation extends StatelessWidget {
   const ReligiousInformation({super.key});
@@ -13,7 +12,7 @@ class ReligiousInformation extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBarWidgets(showBackButton: false),
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Obx(() {
         if (controller.isLoading.value) {
           return const Center(child: CircularProgressIndicator());
@@ -29,10 +28,20 @@ class ReligiousInformation extends StatelessWidget {
           padding: const EdgeInsets.all(16),
           children: [
             Text("İmanın Şartları", style: Theme.of(context).textTheme.titleLarge),
-            ...info.imanSartlari.map((e) => ListTile(leading: const Icon(Icons.check_circle_outline), title: Text(e))),
+            ...info.imanSartlari.map(
+              (e) => ListTile(
+                leading: Icon(Icons.check_circle_outline, color: Theme.of(context).iconTheme.color),
+                title: Text(e, style: Theme.of(context).textTheme.bodyMedium),
+              ),
+            ),
             const SizedBox(height: 20),
             Text("İslam'ın Şartları", style: Theme.of(context).textTheme.titleLarge),
-            ...info.islamSartlari.map((e) => ListTile(leading: const Icon(Icons.star_border), title: Text(e))),
+            ...info.islamSartlari.map(
+              (e) => ListTile(
+                leading: Icon(Icons.star_border, color: Theme.of(context).iconTheme.color),
+                title: Text(e, style: Theme.of(context).textTheme.bodyMedium),
+              ),
+            ),
           ],
         );
       }),

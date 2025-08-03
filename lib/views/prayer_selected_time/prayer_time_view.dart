@@ -1,3 +1,4 @@
+import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_taqwa_app/app/controllers/prayer_times_provider.dart';
@@ -13,8 +14,8 @@ class PrayerTimesScreen extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (_) => PrayerTimesProvider(),
       child: Scaffold(
-        backgroundColor: AppColors.backgroundColor,
-        appBar: AppBarWidgets(showBackButton: false),
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        appBar: AppBarWidgets(showBackButton: true),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Consumer<PrayerTimesProvider>(
@@ -24,8 +25,9 @@ class PrayerTimesScreen extends StatelessWidget {
                   TextField(
                     controller: provider.searchController,
                     decoration: InputDecoration(
+                      hintStyle: Theme.of(context).textTheme.bodyMedium,
                       hintText: 'Şehir/ilçe ara (örn: Ankara)',
-                      prefixIcon: const Icon(Icons.search),
+                      prefixIcon: Icon(FeatherIcons.search, color: Theme.of(context).iconTheme.color),
                       suffixIcon:
                           provider.searchController.text.isNotEmpty
                               ? IconButton(icon: const Icon(Icons.clear), onPressed: provider.clearSearch)
@@ -73,9 +75,9 @@ class PrayerTimesScreen extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            SvgPicture.asset("assets/svg/Frame 22.svg", color: AppColors.darkThemeColor, width: 80, height: 80),
-            SvgPicture.asset("assets/svg/Frame 21.svg", color: AppColors.darkThemeColor, width: 80, height: 80),
-            SvgPicture.asset("assets/svg/Group 20.svg", color: AppColors.darkThemeColor, width: 80, height: 80),
+            SvgPicture.asset("assets/svg/Frame 22.svg", color: AppColors.greenColor, width: 80, height: 80),
+            SvgPicture.asset("assets/svg/Frame 21.svg", color: AppColors.greenColor, width: 80, height: 80),
+            SvgPicture.asset("assets/svg/Group 20.svg", color: AppColors.greenColor, width: 80, height: 80),
           ],
         ),
       );
@@ -92,20 +94,17 @@ class PrayerTimesScreen extends StatelessWidget {
           child: ListTile(
             title: Text(
               location['name'],
-              style: Theme.of(
-                context,
-              ).textTheme.bodyLarge?.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.bold, fontSize: 16),
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold, fontSize: 16),
             ),
             subtitle: Text(
               '${location['stateName']} • ${location['country']}',
-              style: Theme.of(
-                context,
-              ).textTheme.bodySmall?.copyWith(color: AppColors.blackColor, fontWeight: FontWeight.w400, fontSize: 14),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w400, fontSize: 14),
             ),
             onTap: () async {
               await provider.fetchPrayerTimes(location['id'].toString());
               if (provider.prayerData != null) {
                 Navigator.pop(context, {'place': provider.selectedLocation, 'times': provider.prayerData!['times']});
+                Navigator.popUntil(context, ModalRoute.withName('/customnavbarwidgets'));
               }
             },
           ),

@@ -6,12 +6,9 @@ import 'package:flutter_taqwa_app/views/settings/settings_view.dart';
 import 'package:get/get.dart';
 
 class AppBarWidgets extends StatelessWidget implements PreferredSizeWidget {
-  final bool showBackButton; 
+  final bool showBackButton;
 
-  const AppBarWidgets({
-    super.key,
-    this.showBackButton = true, 
-  });
+  const AppBarWidgets({super.key, this.showBackButton = true});
 
   @override
   Size get preferredSize => const Size.fromHeight(80.0);
@@ -21,18 +18,23 @@ class AppBarWidgets extends StatelessWidget implements PreferredSizeWidget {
     final AppBarController controller = Get.put(AppBarController());
 
     return AppBar(
-      automaticallyImplyLeading: showBackButton, // Artık dinamik
+      automaticallyImplyLeading: showBackButton,
       actions: [
         IconButton(
-          icon: SvgPicture.asset("assets/svg/menu.svg", color: AppColors.darkThemeColor, width: 30, height: 30),
+          icon: SvgPicture.asset(
+            "assets/svg/menu.svg",
+            color: Theme.of(context).iconTheme.color,
+            width: 30,
+            height: 30,
+          ),
           onPressed: () {
             controller.navigateWithSlideTransition(context, const SettingsView());
           },
         ),
       ],
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
       centerTitle: false,
-      title: Image.asset("assets/images/logo2.png", width: 80, height: 80, color: AppColors.blackColor),
+      title: Image.asset("assets/images/logo2.png", width: 80, height: 80, color: Theme.of(context).iconTheme.color),
     );
   }
 }

@@ -13,66 +13,64 @@ class CustomNavbarWidgets extends StatelessWidget {
 
   final NavbarController controller = Get.put(NavbarController());
 
-  final List<Widget> _pages = [
-    PrayerView(),
-    RosaryView(),
-    ReligiousInformation(),
-  ];
+  final List<Widget> _pages = [PrayerView(), RosaryView(), ReligiousInformation()];
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-
-    return Obx(() => Scaffold(
-          body: _pages[controller.selectedIndex.value],
-          bottomNavigationBar: BottomNavigationBar(
-            currentIndex: controller.selectedIndex.value,
-            onTap: (index) {
-              HapticFeedback.selectionClick();
-              controller.changeTab(index);
-            },
-            backgroundColor: isDark ? AppColors.blackColor : Colors.white,
-            selectedItemColor: AppColors.darkThemeColor,
-            unselectedItemColor: AppColors.blackColor.withOpacity(0.5),
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            type: BottomNavigationBarType.fixed,
-            items: [
-              BottomNavigationBarItem(
-                label: "Namaz",
-                icon: SvgPicture.asset(
-                  "assets/svg/mosque.svg",
-                  width: 24,
-                  height: 24,
-                  color: controller.selectedIndex.value == 0
-                      ? AppColors.darkThemeColor
-                      : AppColors.blackColor.withOpacity(0.5),
-                ),
+    return Obx(
+      () => Scaffold(
+        body: _pages[controller.selectedIndex.value],
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: controller.selectedIndex.value,
+          onTap: (index) {
+            HapticFeedback.selectionClick();
+            controller.changeTab(index);
+          },
+          backgroundColor: Theme.of(context).cardTheme.color,
+          selectedItemColor: Theme.of(context).iconTheme.color,
+          unselectedItemColor: Theme.of(context).appBarTheme.foregroundColor,
+          showSelectedLabels: true,
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              label: "Namaz",
+              icon: SvgPicture.asset(
+                "assets/svg/mosque.svg",
+                width: 24,
+                height: 24,
+                color:
+                    controller.selectedIndex.value == 0
+                        ? Theme.of(context).iconTheme.color
+                        : Theme.of(context).appBarTheme.foregroundColor,
               ),
-              BottomNavigationBarItem(
-                label: "Tesbih",
-                icon: SvgPicture.asset(
-                  "assets/svg/33.svg",
-                  width: 24,
-                  height: 24,
-                  color: controller.selectedIndex.value == 1
-                      ? AppColors.darkThemeColor
-                      : AppColors.blackColor.withOpacity(0.5),
-                ),
+            ),
+            BottomNavigationBarItem(
+              label: "Tesbih",
+              icon: SvgPicture.asset(
+                "assets/svg/33.svg",
+                width: 24,
+                height: 24,
+                color:
+                    controller.selectedIndex.value == 1
+                        ? Theme.of(context).iconTheme.color
+                        : Theme.of(context).appBarTheme.foregroundColor,
               ),
-              BottomNavigationBarItem(
-                label: "Dini Bilgi",
-                icon: SvgPicture.asset(
-                  "assets/svg/book.svg",
-                  width: 24,
-                  height: 24,
-                  color: controller.selectedIndex.value == 2
-                      ? AppColors.darkThemeColor
-                      : AppColors.blackColor.withOpacity(0.5),
-                ),
+            ),
+            BottomNavigationBarItem(
+              label: "Dini Bilgi",
+              icon: SvgPicture.asset(
+                "assets/svg/book.svg",
+                width: 24,
+                height: 24,
+                color:
+                    controller.selectedIndex.value == 2
+                        ? Theme.of(context).iconTheme.color
+                        : Theme.of(context).appBarTheme.foregroundColor,
               ),
-            ],
-          ),
-        ));
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

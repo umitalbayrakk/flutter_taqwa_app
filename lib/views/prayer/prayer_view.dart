@@ -3,7 +3,6 @@ import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
 import 'package:flutter_taqwa_app/app/widgets/esmaul_husna_card.dart';
 import 'package:flutter_taqwa_app/app/widgets/hadith_card_widgets.dart';
 import 'package:flutter_taqwa_app/app/widgets/prayer_card_widgets.dart';
-import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 
 class PrayerView extends StatefulWidget {
   const PrayerView({super.key});
@@ -17,7 +16,7 @@ class _PrayerViewState extends State<PrayerView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidgets(showBackButton: false),
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(bottom: 100),

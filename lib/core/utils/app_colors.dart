@@ -15,4 +15,5 @@ class AppColors {
   static const Color blueColor = Color(0xFF42a8c3);
   static const Color selectedPrayerColor = Color(0xFFC4E1E6);
   static const Color darkThemeColor = Color(0xFF1F2E35);
+  static const Color dark2ThemeColor = Color(0xFF30444E);
 }

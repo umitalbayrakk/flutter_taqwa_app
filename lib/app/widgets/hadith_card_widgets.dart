@@ -13,7 +13,7 @@ class HadithCardWidget extends StatelessWidget {
         margin: const EdgeInsets.symmetric(horizontal: 16.0),
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
         width: MediaQuery.of(context).size.width * 0.9,
-        decoration: BoxDecoration(color: AppColors.whiteColor, borderRadius: BorderRadius.circular(12.0)),
+        decoration: BoxDecoration(color: Theme.of(context).cardTheme.color, borderRadius: BorderRadius.circular(12.0)),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child:
@@ -25,10 +25,10 @@ class HadithCardWidget extends StatelessWidget {
                     children: [
                       Text(
                         '- ${controller.hadith.value?.ravi ?? ''}',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.w600,
-                          color: Colors.black87,
+                          color: Theme.of(context).textTheme.headlineSmall!.color,
                           fontStyle: FontStyle.italic,
                         ),
                         textAlign: TextAlign.center,
@@ -36,10 +36,10 @@ class HadithCardWidget extends StatelessWidget {
                       const SizedBox(height: 8.0),
                       Text(
                         controller.hadith.value?.metin ?? '',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.w500,
-                          color: Colors.black,
+                          color: Theme.of(context).textTheme.headlineSmall!.color,
                           height: 1.5,
                         ),
                         textAlign: TextAlign.center,
@@ -50,12 +50,20 @@ class HadithCardWidget extends StatelessWidget {
                         children: [
                           Text(
                             controller.hadith.value?.kaynak ?? '',
-                            style: const TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: Colors.black54),
+                            style: TextStyle(
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.w500,
+                              color: Theme.of(context).textTheme.headlineSmall!.color,
+                            ),
                           ),
                           const SizedBox(width: 8.0),
                           Text(
                             '(${controller.hadith.value?.hadisNo ?? ''})',
-                            style: const TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: Colors.black54),
+                            style: TextStyle(
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.w500,
+                              color: Theme.of(context).textTheme.headlineSmall!.color,
+                            ),
                           ),
                         ],
                       ),

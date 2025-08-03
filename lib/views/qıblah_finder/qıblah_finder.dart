@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
-import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 
 class QiblahFinder extends StatelessWidget {
   const QiblahFinder({super.key});
@@ -9,7 +8,7 @@ class QiblahFinder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidgets(showBackButton: true),
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(

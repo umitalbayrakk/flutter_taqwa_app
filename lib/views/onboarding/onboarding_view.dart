@@ -1,3 +1,4 @@
+import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/widgets/navbar_widgets.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
@@ -13,7 +14,7 @@ class OnboardingView extends StatelessWidget {
     final box = GetStorage();
     return Scaffold(
       body: IntroductionScreen(
-        globalBackgroundColor: AppColors.backgroundColor,
+        globalBackgroundColor: Theme.of(context).cardTheme.color,
         scrollPhysics: BouncingScrollPhysics(),
         pages: [
           PageViewModel(
@@ -23,7 +24,7 @@ class OnboardingView extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineLarge?.copyWith(fontWeight: FontWeight.bold),
             ),
             body: "Manuel olarak belirlediğiniz konuma göre namaz vakitleri görüntülenir.",
-            image: Icon(Icons.location_on, size: 200, color: AppColors.greenColor),
+            image: Icon(FeatherIcons.map, size: 200, color: AppColors.greenColor),
           ),
           PageViewModel(
             titleWidget: Text(
@@ -31,7 +32,7 @@ class OnboardingView extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineLarge?.copyWith(fontWeight: FontWeight.bold),
             ),
             body: "Telefonunuzdan konumuna göre otomatik olarak kıble bulma aracını kullanabilirsiniz.",
-            image: Icon(Icons.compass_calibration_rounded, size: 200, color: AppColors.greenColor),
+            image: Icon(FeatherIcons.compass, size: 200, color: AppColors.greenColor),
           ),
           PageViewModel(
             titleWidget: Text(
@@ -39,10 +40,10 @@ class OnboardingView extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineLarge?.copyWith(fontWeight: FontWeight.bold),
             ),
             body: "Namaz Ve Ramazan Kartları ve dahası ayet ve esmul hüsna bu uygulamada",
-            image: Icon(Icons.widgets_outlined, size: 200, color: AppColors.greenColor),
+            image: Icon(FeatherIcons.grid, size: 200, color: AppColors.greenColor),
           ),
         ],
-        next: Icon(Icons.arrow_forward, color: AppColors.greenBlackColor),
+        next: Icon(FeatherIcons.arrowRight, color: AppColors.greenBlackColor, size: 20),
         onDone: () {
           box.write('isFirstTime', false);
           Get.off(() => CustomNavbarWidgets());
@@ -52,16 +53,13 @@ class OnboardingView extends StatelessWidget {
           Get.off(() => CustomNavbarWidgets());
         },
         showSkipButton: true,
-        skip: Text("Atla", style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: AppColors.greenBlackColor)),
-        done: Text(
-          "Haydi Başla",
-          style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: AppColors.greenBlackColor),
-        ),
+        skip: Text("Atla", style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: AppColors.greenColor)),
+        done: Text("Haydi Başla", style: Theme.of(context).textTheme.bodyLarge?.copyWith(color: AppColors.greenColor)),
         dotsDecorator: DotsDecorator(
           size: Size.square(10.0),
           activeSize: Size(20.0, 10.0),
-          color: AppColors.blackColor,
-          activeColor: AppColors.greenBlackColor,
+          color: Theme.of(context).iconTheme.color ?? Colors.black,
+          activeColor: AppColors.greenColor,
           spacing: EdgeInsets.symmetric(horizontal: 3.0),
           activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
         ),

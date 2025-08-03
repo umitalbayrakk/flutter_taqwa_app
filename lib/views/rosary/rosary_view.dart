@@ -21,7 +21,7 @@ class RosaryView extends StatelessWidget {
             },
             child: Scaffold(
               appBar: AppBarWidgets(showBackButton: false),
-              backgroundColor: AppColors.backgroundColor,
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               body: SafeArea(
                 child: Column(
                   children: [
@@ -60,7 +60,7 @@ class _DhikrListView extends StatelessWidget {
             child: CircleAvatar(
               backgroundColor: Colors.white,
               child: IconButton(
-                icon: const Icon(Icons.add, color: Colors.grey),
+                icon: const Icon(Icons.add, color: Colors.black),
                 onPressed: () => _showAddDhikrDialog(context, controller),
               ),
             ),
@@ -92,17 +92,16 @@ class _DhikrListView extends StatelessWidget {
       context: context,
       builder:
           (_) => AlertDialog(
-            backgroundColor: AppColors.whiteColor,
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
             title: Text(
               'Yeni Zikir Ekle',
-              style: Theme.of(
-                context,
-              ).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold, color: AppColors.blackColor),
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
             ),
             content: TextField(
               controller: textController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
+                hintStyle: Theme.of(context).textTheme.bodyMedium,
                 border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
                 hintText: 'Zikir İsmi',
               ),
@@ -163,14 +162,18 @@ class _DhikrChip extends StatelessWidget {
       onLongPress: onLongPress,
       onTap: onPressed,
       child: Chip(
+        side: BorderSide.none,
+        avatar: isSelected ? const Icon(Icons.check, color: Colors.white) : null,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16) * 2),
         label: Text(
           text,
           style: TextStyle(
-            color: isSelected ? Colors.white : Colors.black,
+            color: isSelected ? AppColors.whiteColor : AppColors.blackColor,
             fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
           ),
         ),
-        backgroundColor: isSelected ? AppColors.darkThemeColor : Colors.grey[300],
+        backgroundColor: isSelected ? AppColors.greenColor : Colors.grey[300],
         deleteIcon: isLongPressedMode ? const Icon(Icons.delete) : null,
         onDeleted: isLongPressedMode ? onRemove : null,
       ),
@@ -202,7 +205,7 @@ class _CountUpButton extends StatelessWidget {
     final controller = Provider.of<RosaryViewModel>(context, listen: false);
     return GestureDetector(
       onTap: controller.incrementRosaryCount,
-      child: Container(decoration: BoxDecoration(color: AppColors.darkThemeColor, shape: BoxShape.circle)),
+      child: Container(decoration: BoxDecoration(color: AppColors.greenColor, shape: BoxShape.circle)),
     );
   }
 }
@@ -215,7 +218,7 @@ class _ResetButton extends StatelessWidget {
       context: context,
       builder:
           (_) => AlertDialog(
-            backgroundColor: AppColors.whiteColor,
+            backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             title: Text(
               'Sayacı Sıfırla',
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
