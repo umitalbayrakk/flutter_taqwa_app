@@ -1,16 +1,42 @@
-# flutter_taqwa_app
 
-A new Flutter project.
+## Application Screenshot
 
-## Getting Started
+![Application Screenshot](https://r.resimlink.com/n9qj4s3y0o.png)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
+
+
+This project utilizes the following technologies.:
+
+-  State Managment GetX and Provider
+
+-  MVVM
+
+-  Dark Mode And Light Mode
+
+-  Get Storage 
+
+-  Prayer Times by Location
+
+-  Finding Qibla
+
+- Religious Information
+
+- Names Of God Card Widgets
+
+- Ayah List Card Widgets
+
+- Ramadan Card Widgets Comming Soon
+
+- Feedback Screen
+
+- Notification 
+
+.....??
+
+
+
+  v
