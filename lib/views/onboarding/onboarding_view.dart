@@ -58,7 +58,7 @@ class OnboardingView extends StatelessWidget {
         dotsDecorator: DotsDecorator(
           size: Size.square(10.0),
           activeSize: Size(20.0, 10.0),
-          color: Theme.of(context).iconTheme.color ?? Colors.black,
+          color: Theme.of(context).iconTheme.color ?? AppColors.blackColor,
           activeColor: AppColors.greenColor,
           spacing: EdgeInsets.symmetric(horizontal: 3.0),
           activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),

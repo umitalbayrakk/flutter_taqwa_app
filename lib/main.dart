@@ -1,13 +1,13 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_taqwa_app/app/controllers/device_controller.dart';
 import 'package:flutter_taqwa_app/app/controllers/esmaul_husna_controller.dart';
 import 'package:flutter_taqwa_app/app/controllers/hadith_controller.dart';
 import 'package:flutter_taqwa_app/app/controllers/theme_controller.dart';
 import 'package:flutter_taqwa_app/app/routes/app_pages.dart';
 import 'package:flutter_taqwa_app/app/routes/app_routers.dart';
+import 'package:flutter_taqwa_app/core/constants/app_constant.dart';
 import 'package:flutter_taqwa_app/core/themes/app_themes.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
     return Obx(
       () => GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Taqwa',
+        title: AppConstant.appName,
         theme: AppThemes.lightTheme,
         darkTheme: AppThemes.darkTheme,
         themeMode: themeController.themeMode.value,

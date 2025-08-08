@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_taqwa_app/app/controllers/app_bar_controller.dart';
-import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:flutter_taqwa_app/views/settings/settings_view.dart';
 import 'package:get/get.dart';
 

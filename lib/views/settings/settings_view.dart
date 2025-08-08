@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/controllers/app_bar_controller.dart';
 import 'package:flutter_taqwa_app/app/controllers/prayer_card_controller.dart';
 import 'package:flutter_taqwa_app/app/controllers/theme_controller.dart';
+import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
+import 'package:flutter_taqwa_app/core/constants/app_constant.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
-import 'package:flutter_taqwa_app/views/prayer_selected_time/prayer_time_view.dart';
 import 'package:flutter_taqwa_app/views/qazaprayer_calculator/qazaprayer_calculator_view.dart';
 import 'package:get/get.dart';
 
@@ -15,12 +16,13 @@ class SettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     final cardController = Get.put(PrayerController());
     final AppBarController controller = Get.put(AppBarController());
-    final ThemeController themeController = Get.find<ThemeController>();
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
-        title: Text("Ayarlar", style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold)),
+        title: Text(
+          AppConstant.settings,
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+        ),
         centerTitle: false,
         elevation: 0,
       ),
@@ -28,20 +30,26 @@ class SettingsView extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
         children: [
-          _buildSectionTitle("Hesap"),
-          _buildTile(context: context, icon: Icons.lock_outline, title: "Gizlilik", onTap: () {}),
-          _buildTile(context: context, icon: Icons.feedback, title: "Geri Bildirim", onTap: () {}),
-          _buildTile(context: context, icon: Icons.notifications_none, title: "Bildirimler", onTap: () {}),
-          const SizedBox(height: 16),
-          _buildSectionTitle("Uygulama"),
+          _buildSectionTitle("Bildirimler"),
+          _buildTile(context: context, icon: FeatherIcons.bell, title: "Bildirimler", onTap: () {}),
+          _buildSectionTitle("KONUM"),
+          _buildTile(
+            context: context,
+            icon: FeatherIcons.mapPin,
+            title: "Konum Seç",
+            onTap: () {
+              // controller.navigateWithSlideTransition(context, const PrayerTimesScreen());
+              cardController.navigateAndFetchPrayerTimes();
+            },
+          ),
+          _buildSectionTitle("TAQWA"),
           ThemeToggleButton(),
           _buildTile(
             context: context,
-            icon: Icons.location_on,
-            title: "Konum Seç",
+            icon: FeatherIcons.layout,
+            title: "Namaz Vakitleri Kart'ı Rengi Değiştir",
             onTap: () {
-              controller.navigateWithSlideTransition(context, const PrayerTimesScreen());
-              cardController.navigateAndFetchPrayerTimes();
+              _showBackgroundColorDialog(context, cardController);
             },
           ),
           _buildTile(
@@ -52,16 +60,32 @@ class SettingsView extends StatelessWidget {
               controller.navigateWithSlideTransition(context, KazaView());
             },
           ),
+          _buildSectionTitle("DAHA FAZLA"),
           _buildTile(
             context: context,
-            icon: Icons.color_lens,
-            title: "Arka Plan Rengi",
+            icon: Icons.info_outline,
+            title: "Hakkımızda",
             onTap: () {
-              _showBackgroundColorDialog(context, cardController);
+              controller.navigateWithSlideTransition(context, const AboutView());
             },
           ),
-          _buildTile(context: context, icon: Icons.info_outline, title: "Hakkımızda", onTap: () {}),
+          _buildTile(context: context, icon: Icons.feedback, title: "Geri Bildirim", onTap: () {}),
           _buildTile(context: context, icon: Icons.star_border, title: "Puanla", onTap: () {}),
+          SizedBox(height: 10),
+          Column(
+            children: [
+              Text(
+                textAlign: TextAlign.center,
+                "Namaz Vakitleri 'vakit.vercel.app'\n sitesinden alınmaktadır",
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w200),
+              ),
+              SizedBox(height: 20),
+              Text(
+                "Version : 1.0.0",
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.w200),
+              ),
+            ],
+          ),
         ],
       ),
     );
@@ -91,7 +115,16 @@ class SettingsView extends StatelessWidget {
           onTap: onTap,
           dense: true,
           contentPadding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-          leading: Icon(icon, color: Theme.of(context).iconTheme.color, size: 20),
+          leading: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              shape: BoxShape.rectangle,
+              color: Theme.of(context).cardColor,
+            ),
+            height: context.height * 0.05,
+            width: context.height * 0.05,
+            child: Icon(icon, color: Theme.of(context).iconTheme.color, size: 20),
+          ),
           title: Text(
             title,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: textColor),
@@ -101,7 +134,6 @@ class SettingsView extends StatelessWidget {
                   ? Text(trailingText, style: const TextStyle(color: Colors.grey, fontSize: 13))
                   : const Icon(Icons.arrow_forward_ios, size: 14, color: Colors.grey),
         ),
-        const Divider(height: 0.5),
       ],
     );
   }
@@ -176,14 +208,22 @@ class ThemeToggleButton extends StatelessWidget {
           onTap: () => _showThemeBottomSheet(context),
           dense: true,
           contentPadding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-          leading: Icon(Icons.color_lens, color: Theme.of(context).iconTheme.color, size: 20),
+          leading: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              shape: BoxShape.rectangle,
+              color: Theme.of(context).cardColor,
+            ),
+            height: context.height * 0.05,
+            width: context.height * 0.05,
+            child: Icon(FeatherIcons.sun, color: Theme.of(context).iconTheme.color, size: 20),
+          ),
           title: Text(
             "Tema Seçimi",
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold),
           ),
           trailing: const Icon(Icons.arrow_forward_ios, size: 14, color: Colors.grey),
         ),
-        const Divider(height: 0.5),
       ],
     );
   }
@@ -192,6 +232,7 @@ class ThemeToggleButton extends StatelessWidget {
     final ThemeController themeController = Get.find<ThemeController>();
 
     showModalBottomSheet(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       isScrollControlled: true,
       context: context,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(16))),
@@ -201,9 +242,12 @@ class ThemeToggleButton extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               const SizedBox(height: 16),
-              const Text('Tema Seçimi', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-              const Divider(),
+              Text(
+                'Tema Seçimi',
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold),
+              ),
               _buildOption(
+                context: context,
                 icon: FeatherIcons.sun,
                 label: 'Aydınlık Tema',
                 selected: themeController.themeMode.value == ThemeMode.light,
@@ -213,6 +257,7 @@ class ThemeToggleButton extends StatelessWidget {
                 },
               ),
               _buildOption(
+                context: context,
                 icon: FeatherIcons.moon,
                 label: 'Karanlık Tema',
                 selected: themeController.themeMode.value == ThemeMode.dark,
@@ -222,6 +267,7 @@ class ThemeToggleButton extends StatelessWidget {
                 },
               ),
               _buildOption(
+                context: context,
                 icon: FeatherIcons.aperture,
                 label: 'Sistem Teması',
                 selected: themeController.themeMode.value == ThemeMode.system,
@@ -239,16 +285,39 @@ class ThemeToggleButton extends StatelessWidget {
   }
 
   Widget _buildOption({
+    required BuildContext context,
     required IconData icon,
     required String label,
     required bool selected,
     required VoidCallback onTap,
   }) {
     return ListTile(
-      leading: Icon(icon),
-      title: Text(label),
+      leading: Icon(icon, color: Theme.of(context).iconTheme.color, size: 20),
+      title: Text(label, style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold)),
       trailing: selected ? const Icon(Icons.check, color: Colors.blue) : null,
       onTap: onTap,
+    );
+  }
+}
+
+//About View
+class AboutView extends StatelessWidget {
+  const AboutView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      appBar: AppBarWidgets(showBackButton: true),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            "Bu uygulama Ümit Albayrak tarafından geliştirilmiştir tüm hakları saklıdır.",
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
     );
   }
 }

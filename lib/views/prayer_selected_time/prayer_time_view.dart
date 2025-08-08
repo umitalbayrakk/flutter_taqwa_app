@@ -104,6 +104,7 @@ class PrayerTimesScreen extends StatelessWidget {
               await provider.fetchPrayerTimes(location['id'].toString());
               if (provider.prayerData != null) {
                 Navigator.pop(context, {'place': provider.selectedLocation, 'times': provider.prayerData!['times']});
+              
                 Navigator.popUntil(context, ModalRoute.withName('/customnavbarwidgets'));
               }
             },

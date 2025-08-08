@@ -3,6 +3,7 @@ import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 
 class AppThemes {
   static final lightTheme = ThemeData(
+    cardColor: AppColors.selectedPrayerColor,
     dividerColor: Colors.grey,
     brightness: Brightness.light,
     scaffoldBackgroundColor: AppColors.backgroundColor,
@@ -37,6 +38,7 @@ class AppThemes {
   );
 
   static final darkTheme = ThemeData(
+    cardColor: AppColors.dark2ThemeColor,
     drawerTheme: DrawerThemeData(backgroundColor: AppColors.darkThemeColor),
     brightness: Brightness.dark,
     scaffoldBackgroundColor: AppColors.darkThemeColor,

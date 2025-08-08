@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taqwa_app/app/controllers/rosary_controller.dart';
 import 'package:flutter_taqwa_app/app/widgets/app_bar_widgets.dart';
+import 'package:flutter_taqwa_app/core/constants/app_constant.dart';
 import 'package:flutter_taqwa_app/core/utils/app_colors.dart';
 import 'package:provider/provider.dart';
 
@@ -45,7 +46,7 @@ class RosaryView extends StatelessWidget {
 }
 
 class _DhikrListView extends StatelessWidget {
-  const _DhikrListView({super.key});
+  const _DhikrListView();
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +96,7 @@ class _DhikrListView extends StatelessWidget {
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
             title: Text(
-              'Yeni Zikir Ekle',
+              AppConstant.add,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(fontWeight: FontWeight.bold),
             ),
             content: TextField(
@@ -103,7 +104,7 @@ class _DhikrListView extends StatelessWidget {
               decoration: InputDecoration(
                 hintStyle: Theme.of(context).textTheme.bodyMedium,
                 border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                hintText: 'Zikir İsmi',
+                hintText: AppConstant.dhikrName,
               ),
             ),
             actions: [
@@ -111,7 +112,7 @@ class _DhikrListView extends StatelessWidget {
                 style: TextButton.styleFrom(backgroundColor: AppColors.redColor),
                 onPressed: () => Navigator.of(context).pop(),
                 child: Text(
-                  'Kapat',
+                  AppConstant.close,
                   style: Theme.of(
                     context,
                   ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: AppColors.whiteColor),
@@ -126,7 +127,7 @@ class _DhikrListView extends StatelessWidget {
                   }
                 },
                 child: Text(
-                  'Ekle',
+                  AppConstant.add,
                   style: Theme.of(
                     context,
                   ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: AppColors.whiteColor),
@@ -153,7 +154,6 @@ class _DhikrChip extends StatelessWidget {
     required this.onLongPress,
     required this.onPressed,
     required this.onRemove,
-    super.key,
   });
 
   @override
@@ -188,7 +188,7 @@ class _DhikrCountDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Provider.of<RosaryViewModel>(context);
     if (controller.selectedDhikr.isEmpty) {
-      return const Center(child: Text('Please select a dhikr', style: TextStyle(color: Colors.grey, fontSize: 16)));
+      return const Center(child: Text(AppConstant.selectDhikr, style: TextStyle(color: Colors.grey, fontSize: 16)));
     }
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -220,11 +220,11 @@ class _ResetButton extends StatelessWidget {
           (_) => AlertDialog(
             backgroundColor: Theme.of(context).scaffoldBackgroundColor,
             title: Text(
-              'Sayacı Sıfırla',
+              AppConstant.countReset,
               style: Theme.of(context).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             content: Text(
-              'Sayacı Sıfırlamak istediğinizden emin misiniz?',
+              AppConstant.resetConfirmation,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold),
             ),
             actions: [
@@ -232,7 +232,7 @@ class _ResetButton extends StatelessWidget {
                 style: TextButton.styleFrom(backgroundColor: AppColors.redColor),
                 onPressed: () => Navigator.of(context).pop(false),
                 child: Text(
-                  'Çıkış',
+                  AppConstant.close,
                   style: Theme.of(
                     context,
                   ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: AppColors.whiteColor),
@@ -242,7 +242,7 @@ class _ResetButton extends StatelessWidget {
                 style: TextButton.styleFrom(backgroundColor: AppColors.greenColor),
                 onPressed: () => Navigator.of(context).pop(true),
                 child: Text(
-                  'Sıfırla',
+                  AppConstant.reset,
                   style: Theme.of(
                     context,
                   ).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold, color: AppColors.whiteColor),
@@ -271,7 +271,7 @@ class _ResetButton extends StatelessWidget {
           backgroundColor: controller.rosaryCount > 0 ? AppColors.redColor : Colors.grey,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
-        child: const Text('Sıfırla', style: TextStyle(color: Colors.white)),
+        child: const Text(AppConstant.reset, style: TextStyle(color: Colors.white)),
       ),
     );
   }
